@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/54695929@N00/37777954/" class="face" style="background-image: url('../faces_large2/12/face27162.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/26/37777954_06c63ad971.jpg','1.13511127232')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/54178087@N02/6399168223/" class="face" style="background-image: url('../faces_large2/16/face1691.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7013/6399168223_da403ca1ff.jpg','0.918285234777')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37996616805@N01/14020113881/" class="face" style="background-image: url('../faces_large2/16/face16541.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2918/14020113881_1e55a4719a.jpg','0.91664458015')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/16863429@N00/3617989269/" class="face" style="background-image: url('../faces_large2/9/face23084.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3563/3617989269_1c140e7f4e.jpg','0.657666001534')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25874444@N00/12884710925/" class="face" style="background-image: url('../faces_large2/6/face19031.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3679/12884710925_f8e06a7132.jpg','0.630928367506')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/36584552@N00/9610982998/" class="face" style="background-image: url('../faces_large2/6/face4081.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5463/9610982998_221444d062.jpg','0.608889072069')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/cynthia nixon.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Cynthia_Nixon">Cynthia Nixon</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

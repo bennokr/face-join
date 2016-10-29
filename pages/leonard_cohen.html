@@ -1,0 +1,72 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/15528381@N02/6147900672/" class="face" style="background-image: url('../faces_large2/2/face20977.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6206/6147900672_103c632929.jpg','1.42703637292')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59787340@N00/2630969258/" class="face" style="background-image: url('../faces_large2/5/face1530.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3078/2630969258_738c7956b6.jpg','0.863892191996')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26623290@N02/8144512212/" class="face" style="background-image: url('../faces_large2/6/face9931.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8470/8144512212_8c2a25f0b8.jpg','0.634347004849')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/75927824@N06/7478170944/" class="face" style="background-image: url('../faces_large2/21/face15046.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7135/7478170944_d53a91e865.jpg','0.558169417574')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/leonard cohen.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Leonard_Cohen">Leonard Cohen</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 25.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

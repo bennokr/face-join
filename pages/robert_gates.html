@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/69579298@N00/2294944722/" class="face" style="background-image: url('../faces_large2/15/face565.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2250/2294944722_1aa5284503.jpg','1.22807351754')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7238765@N04/1317767863/" class="face" style="background-image: url('../faces_large2/8/face16983.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1273/1317767863_08859804fe.jpg','1.15129664512')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46161602@N00/7061590265/" class="face" style="background-image: url('../faces_large2/1/face6526.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5339/7061590265_7999a441c4.jpg','0.876548840746')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51902433@N07/8169455079/" class="face" style="background-image: url('../faces_large2/4/face15279.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7130/8169455079_29933b10ae.jpg','0.572189069103')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7945418@N03/4342072334/" class="face" style="background-image: url('../faces_large2/14/face13939.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4067/4342072334_0fd39b34f0.jpg','0.561729586014')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/78986986@N00/13764850824/" class="face" style="background-image: url('../faces_large2/3/face25878.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7264/13764850824_2dd33f1089.jpg','0.55623191873')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/robert gates.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Robert_Gates">Robert Gates</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/46546195@N06/8044444849/" class="face" style="background-image: url('../faces_large2/23/face8698.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8462/8044444849_d007b80fab.jpg','0.976774135491')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/13592750@N00/7961434826/" class="face" style="background-image: url('../faces_large2/15/face6640.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8319/7961434826_d712391dbb.jpg','0.606642388572')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7965504@N03/2731717153/" class="face" style="background-image: url('../faces_large2/2/face6302.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3077/2731717153_481ed63a0f.jpg','0.519255094385')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/barney frank.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Barney_Frank">Barney Frank</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

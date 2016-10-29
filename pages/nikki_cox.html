@@ -1,0 +1,88 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/28629203@N00/516688457/" class="face" style="background-image: url('../faces_large2/22/face13497.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/251/516688457_fa09096e6c.jpg','1.60557087778')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/12500822@N08/4704124194/" class="face" style="background-image: url('../faces_large2/23/face11998.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4036/4704124194_3876ea476d.jpg','1.31108164936')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/66586176@N00/2492754066/" class="face" style="background-image: url('../faces_large2/2/face17652.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3187/2492754066_c0bebaf728.jpg','1.25038018089')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59719272@N06/5538395220/" class="face" style="background-image: url('../faces_large2/17/face5892.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5254/5538395220_1e835e1920.jpg','1.06052723758')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/35768689@N08/5402469568/" class="face" style="background-image: url('../faces_large2/7/face282.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5295/5402469568_c3c24d031c.jpg','0.878954954202')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37498524@N00/2164830949/" class="face" style="background-image: url('../faces_large2/12/face18512.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2307/2164830949_fd4e596b3e.jpg','0.875753942107')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39561962@N06/12175366734/" class="face" style="background-image: url('../faces_large2/19/face1819.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5525/12175366734_9d634d4682.jpg','0.780801678335')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/54272628@N00/8185117731/" class="face" style="background-image: url('../faces_large2/14/face5889.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8062/8185117731_341ea6aa92.jpg','0.601284421639')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23088204@N00/2911524416/" class="face" style="background-image: url('../faces_large2/22/face13322.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3061/2911524416_2d24ede7c4.jpg','0.56685021776')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71107559@N03/7157809761/" class="face" style="background-image: url('../faces_large2/23/face5223.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7103/7157809761_daee3cfa74.jpg','0.537512056874')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14020964@N02/9452110155/" class="face" style="background-image: url('../faces_large2/5/face19780.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7460/9452110155_b0c4c24251.jpg','0.534549394072')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/6387850955/" class="face" style="background-image: url('../faces_large2/1/face7701.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6108/6387850955_0f80cdd8a0.jpg','0.529008693849')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/nikki cox.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Nikki_Cox">Nikki Cox</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 8.33333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

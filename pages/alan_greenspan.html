@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/8036553@N07/8506834965/" class="face" style="background-image: url('../faces_large2/8/face7033.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8242/8506834965_7c82478cdb.jpg','1.59019335136')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/48745248@N00/6213030107/" class="face" style="background-image: url('../faces_large2/0/face23500.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6115/6213030107_366a343775.jpg','1.02766276031')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/61566974@N08/6794894499/" class="face" style="background-image: url('../faces_large2/18/face1668.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7142/6794894499_0588c53695.jpg','0.782325407739')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14508943@N00/8748187967/" class="face" style="background-image: url('../faces_large2/10/face2560.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7291/8748187967_7f1d11583c.jpg','0.778552845227')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14792919@N08/1516831265/" class="face" style="background-image: url('../faces_large2/24/face1999.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2241/1516831265_2e12bf6d16.jpg','0.685226886084')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/69708810@N00/2153289956/" class="face" style="background-image: url('../faces_large2/15/face5865.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2149/2153289956_7963de199a.jpg','0.664926651484')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/alan greenspan.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Alan_Greenspan">Alan Greenspan</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

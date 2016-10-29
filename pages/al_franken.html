@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/38637749@N00/3757368126/" class="face" style="background-image: url('../faces_large2/6/face13431.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2608/3757368126_c50dc9214b.jpg','1.32563495881')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9133668@N08/4152958755/" class="face" style="background-image: url('../faces_large2/21/face2271.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2665/4152958755_d55d1fd0ba.jpg','1.22192982981')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8353488@N04/13458022104/" class="face" style="background-image: url('../faces_large2/24/face14674.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7302/13458022104_31f232c090.jpg','1.1033563984')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/13253416@N02/4352498084/" class="face" style="background-image: url('../faces_large2/24/face15574.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4057/4352498084_cb8c3bafc0.jpg','0.763982096328')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11831873@N00/8153342973/" class="face" style="background-image: url('../faces_large2/9/face17034.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8488/8153342973_7117dba230.jpg','0.739921582814')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/84411769@N04/10584816865/" class="face" style="background-image: url('../faces_large2/9/face6609.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2888/10584816865_15b4ac5717.jpg','0.5996698529')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/al franken.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Al_Franken">Al Franken</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

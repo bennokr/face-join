@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/45241451@N00/10246934235/" class="face" style="background-image: url('../faces_large2/9/face15859.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3782/10246934235_9023e992db.jpg','0.750175114782')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11343498@N02/10781304563/" class="face" style="background-image: url('../faces_large2/22/face847.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7293/10781304563_8614980373.jpg','0.65063891232')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/74743437@N00/8480613454/" class="face" style="background-image: url('../faces_large2/1/face14826.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8367/8480613454_46d440007f.jpg','0.505340920401')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/jacques brel.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Jacques_Brel">Jacques Brel</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

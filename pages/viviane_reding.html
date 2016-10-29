@@ -1,0 +1,78 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/48734911@N00/5162437223/" class="face" style="background-image: url('../faces_large2/11/face8311.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1120/5162437223_d52e9a2212.jpg','1.40693728213')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/40829484@N00/2097853307/" class="face" style="background-image: url('../faces_large2/6/face8281.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2370/2097853307_1bbb624b6b.jpg','0.982280534441')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11822223@N03/6769142681/" class="face" style="background-image: url('../faces_large2/17/face7217.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7150/6769142681_d22780c5df.jpg','0.842397762662')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68026119@N00/8236178679/" class="face" style="background-image: url('../faces_large2/6/face26281.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8210/8236178679_f6c30f96d0.jpg','0.616056968216')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8525214@N06/3161310202/" class="face" style="background-image: url('../faces_large2/24/face26424.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3130/3161310202_f02d7fc62f.jpg','0.606225186179')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25099019@N05/8070360722/" class="face" style="background-image: url('../faces_large2/3/face25578.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8456/8070360722_5d3a47b010.jpg','0.556278201861')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67324379@N03/6909766128/" class="face" style="background-image: url('../faces_large2/8/face24508.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5350/6909766128_abfee738ec.jpg','0.538162768611')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/viviane reding.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Viviane_Reding">Viviane Reding</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 14.2857142857%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

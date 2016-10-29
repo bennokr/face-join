@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/62507322@N03/8891513231/" class="face" style="background-image: url('../faces_large2/9/face17659.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7426/8891513231_e387829865.jpg','1.10503585351')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25504895@N08/3429952714/" class="face" style="background-image: url('../faces_large2/15/face20915.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3644/3429952714_79ccf3132b.jpg','0.843105170677')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/72538882@N00/2123082752/" class="face" style="background-image: url('../faces_large2/0/face3075.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2135/2123082752_169cfa8df5.jpg','0.661597108316')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26487906@N00/3225146069/" class="face" style="background-image: url('../faces_large2/5/face7030.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3373/3225146069_684da74fa4.jpg','0.586892841547')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22277293@N02/3101371295/" class="face" style="background-image: url('../faces_large2/0/face24100.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3122/3101371295_992368e746.jpg','0.533764969091')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/lloyd banks.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Lloyd_Banks">Lloyd Banks</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

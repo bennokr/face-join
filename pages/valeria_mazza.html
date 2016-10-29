@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/9624992@N04/2088760370/" class="face" style="background-image: url('../faces_large2/10/face6785.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2234/2088760370_baa051652a.jpg','1.70205472316')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/74814994@N00/4131424938/" class="face" style="background-image: url('../faces_large2/18/face768.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2669/4131424938_390951ea85.jpg','1.36701805575')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/31420016@N07/8173987878/" class="face" style="background-image: url('../faces_large2/2/face24927.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8487/8173987878_41504b736c.jpg','1.35237131462')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/82298625@N00/8128323609/" class="face" style="background-image: url('../faces_large2/1/face25651.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8470/8128323609_25454f46c0.jpg','0.807314533841')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21383568@N00/388107026/" class="face" style="background-image: url('../faces_large2/0/face21975.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/183/388107026_53dc9fecc4.jpg','0.699792041329')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59719272@N06/5538395220/" class="face" style="background-image: url('../faces_large2/17/face5892.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5254/5538395220_1e835e1920.jpg','0.552967119393')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/valeria mazza.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Valeria_Mazza">Valeria Mazza</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

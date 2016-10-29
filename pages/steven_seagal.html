@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/49380681@N03/7873319352/" class="face" style="background-image: url('../faces_large2/21/face16446.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8299/7873319352_07328965c1.jpg','1.20773531107')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7945418@N03/4342072334/" class="face" style="background-image: url('../faces_large2/14/face13939.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4067/4342072334_0fd39b34f0.jpg','1.04737670606')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/20948708@N06/5228763748/" class="face" style="background-image: url('../faces_large2/1/face15551.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5248/5228763748_bca694d774.jpg','0.893189803973')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/82394503@N00/5243987202/" class="face" style="background-image: url('../faces_large2/20/face14870.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5161/5243987202_823f04d6e3.jpg','0.853828314296')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/40662521@N07/4365634424/" class="face" style="background-image: url('../faces_large2/2/face13102.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2729/4365634424_4bf8be56c5.jpg','0.543414136129')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/31101483@N03/3535339803/" class="face" style="background-image: url('../faces_large2/20/face4645.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3372/3535339803_c54be89385.jpg','0.524476081996')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/steven seagal.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Steven_Seagal">Steven Seagal</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/36890792@N08/3663529437/" class="face" style="background-image: url('../faces_large2/4/face24854.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3623/3663529437_24a73c6062.jpg','0.993808049582')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8852300@N03/9797793083/" class="face" style="background-image: url('../faces_large2/0/face26675.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2844/9797793083_7969ced8ca.jpg','0.703558006431')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/16737395@N00/6813699292/" class="face" style="background-image: url('../faces_large2/15/face24840.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7181/6813699292_33915449a5.jpg','0.703558006431')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37964888@N04/12490106555/" class="face" style="background-image: url('../faces_large2/0/face100.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3668/12490106555_34f970b333.jpg','0.621843249751')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/90207975@N03/8732694363/" class="face" style="background-image: url('../faces_large2/11/face15336.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7304/8732694363_7faf27591c.jpg','0.571748716803')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/60340220@N06/8552695238/" class="face" style="background-image: url('../faces_large2/15/face23890.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8102/8552695238_1a4e1e9fc2.jpg','0.517987046174')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/erykah badu.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Erykah_Badu">Erykah Badu</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

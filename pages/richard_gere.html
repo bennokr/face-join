@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/7278633@N04/4659264173/" class="face" style="background-image: url('../faces_large2/5/face55.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4013/4659264173_e89bf72e3d.jpg','1.06887992023')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/48600106280@N01/503048414/" class="face" style="background-image: url('../faces_large2/0/face17200.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/218/503048414_90b040493c.jpg','0.806275542663')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/72031802@N00/3115527622/" class="face" style="background-image: url('../faces_large2/14/face27314.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3055/3115527622_6a85e3222a.jpg','0.78659473356')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34132370@N00/7481052746/" class="face" style="background-image: url('../faces_large2/16/face25216.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8147/7481052746_df3cabfb11.jpg','0.773346783661')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/96376204@N00/5125907515/" class="face" style="background-image: url('../faces_large2/23/face26998.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4038/5125907515_d04bae1bfb.jpg','0.714424863041')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/33573352@N06/6870071493/" class="face" style="background-image: url('../faces_large2/11/face4761.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7188/6870071493_05bd6336a1.jpg','0.545023841955')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/richard gere.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Richard_Gere">Richard Gere</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

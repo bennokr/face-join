@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/18363827@N00/9439057592/" class="face" style="background-image: url('../faces_large2/14/face21389.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5471/9439057592_9e260546d2.jpg','0.847104005015')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/40394089@N00/5317851950/" class="face" style="background-image: url('../faces_large2/15/face19940.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5083/5317851950_00c821b82f.jpg','0.7577265997')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65131746@N00/8093081240/" class="face" style="background-image: url('../faces_large2/24/face11299.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8195/8093081240_b1ac25eb3c.jpg','0.681329456229')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/74814994@N00/4131424938/" class="face" style="background-image: url('../faces_large2/17/face767.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2669/4131424938_390951ea85.jpg','0.649652227513')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/20948708@N06/5053796026/" class="face" style="background-image: url('../faces_large2/6/face1181.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4132/5053796026_1709843f27.jpg','0.573227778289')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79034573@N00/354491613/" class="face" style="background-image: url('../faces_large2/14/face9489.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/152/354491613_f7aa19e552.jpg','0.523540257019')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/howard dean.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Howard_Dean">Howard Dean</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

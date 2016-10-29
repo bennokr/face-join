@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/12700556@N07/12696867363/" class="face" style="background-image: url('../faces_large2/9/face1184.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3771/12696867363_830e560530.jpg','2.25298295638')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50351436@N07/11365525305/" class="face" style="background-image: url('../faces_large2/7/face24332.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3732/11365525305_d0eeca78bb.jpg','1.86149142127')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50149570@N08/8244159336/" class="face" style="background-image: url('../faces_large2/2/face25077.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8486/8244159336_6abea87bf6.jpg','1.53265801983')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/24151837@N08/4775619440/" class="face" style="background-image: url('../faces_large2/15/face2065.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4137/4775619440_1866af85df.jpg','0.670515169038')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/99648519@N00/193141678/" class="face" style="background-image: url('../faces_large2/13/face21038.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/68/193141678_6aad3745a8.jpg','0.643578224379')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/56721030@N00/11172185015/" class="face" style="background-image: url('../faces_large2/5/face4905.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2854/11172185015_6e80386b67.jpg','0.501760116578')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/salvador dali.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Salvador_Dali">Salvador Dali</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

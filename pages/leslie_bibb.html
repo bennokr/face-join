@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/59024622@N00/13531034063/" class="face" style="background-image: url('../faces_large2/1/face14626.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2847/13531034063_bb0e68ac01.jpg','1.0404563372')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29789073@N00/4141531571/" class="face" style="background-image: url('../faces_large2/8/face8308.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2606/4141531571_e8090ccda1.jpg','0.73343151936')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/38174668@N05/5391956492/" class="face" style="background-image: url('../faces_large2/12/face23287.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5217/5391956492_51340c6237.jpg','0.678157061584')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26806380@N00/8588444969/" class="face" style="background-image: url('../faces_large2/12/face24287.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8089/8588444969_50108db5ea.jpg','0.664389205648')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/74814994@N00/4131424938/" class="face" style="background-image: url('../faces_large2/18/face768.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2669/4131424938_390951ea85.jpg','0.634375554004')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/leslie bibb.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Leslie_Bibb">Leslie Bibb</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

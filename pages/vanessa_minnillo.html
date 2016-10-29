@@ -1,0 +1,72 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/71606984@N00/8697788914/" class="face" style="background-image: url('../faces_large2/9/face19659.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8119/8697788914_f5e7c5b612.jpg','1.12472550887')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/38388453@N08/12722754544/" class="face" style="background-image: url('../faces_large2/14/face20639.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7443/12722754544_43a845d72c.jpg','1.0486171712')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37498524@N00/2164830949/" class="face" style="background-image: url('../faces_large2/12/face18512.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2307/2164830949_fd4e596b3e.jpg','0.788267063584')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23592884@N03/5412004414/" class="face" style="background-image: url('../faces_large2/17/face26492.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5092/5412004414_e68d77f56d.jpg','0.543476377839')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/vanessa minnillo.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Vanessa_Minnillo">Vanessa Minnillo</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 25.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

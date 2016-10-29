@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/50218404@N00/210802669/" class="face" style="background-image: url('../faces_large2/1/face22201.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/66/210802669_d6249082c8.jpg','1.1166577725')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/9105743356/" class="face" style="background-image: url('../faces_large2/22/face8272.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7380/9105743356_437981a227.jpg','0.91189787171')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11461909@N06/3926753297/" class="face" style="background-image: url('../faces_large2/15/face16490.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3475/3926753297_c19486c7f3.jpg','0.837565412215')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29173526@N00/6179514313/" class="face" style="background-image: url('../faces_large2/24/face524.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6177/6179514313_f5861218cf.jpg','0.672707543785')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/13327238@N02/13892173655/" class="face" style="background-image: url('../faces_large2/17/face22217.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7066/13892173655_bb2bbe3b06.jpg','0.605838554227')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28189257@N02/5716315269/" class="face" style="background-image: url('../faces_large2/10/face2060.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3241/5716315269_3c077a3e34.jpg','0.580824672939')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/vanessa marcil.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Vanessa_Marcil">Vanessa Marcil</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

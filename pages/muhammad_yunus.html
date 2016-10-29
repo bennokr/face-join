@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/44546195@N04/7542698100/" class="face" style="background-image: url('../faces_large2/2/face19677.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8168/7542698100_7955996237.jpg','0.813181716602')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14442245@N02/4920875593/" class="face" style="background-image: url('../faces_large2/15/face6590.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4096/4920875593_b6bd04e463.jpg','0.776671991925')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79684288@N00/8230338710/" class="face" style="background-image: url('../faces_large2/19/face26344.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8066/8230338710_04ca8ac390.jpg','0.593881065706')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/muhammad yunus.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Muhammad_Yunus">Muhammad Yunus</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

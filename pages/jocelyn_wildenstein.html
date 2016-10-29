@@ -1,0 +1,68 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/97515101@N04/9568103466/" class="face" style="background-image: url('../faces_large2/22/face6247.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3715/9568103466_68531d1a96.jpg','0.784442095381')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/66586176@N00/2492754066/" class="face" style="background-image: url('../faces_large2/2/face17652.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3187/2492754066_c0bebaf728.jpg','0.506501156261')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/jocelyn wildenstein.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Jocelyn_Wildenstein">Jocelyn Wildenstein</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 50.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

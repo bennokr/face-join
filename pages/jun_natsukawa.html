@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/7399465@N06/4373730587/" class="face" style="background-image: url('../faces_large2/24/face6599.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2681/4373730587_1d6c6d8213.jpg','1.30607129793')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/101160162@N04/10862966986/" class="face" style="background-image: url('../faces_large2/8/face3233.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5502/10862966986_d42f694795.jpg','1.28882346661')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22433507@N00/8029575197/" class="face" style="background-image: url('../faces_large2/23/face17298.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8457/8029575197_ed9ab83511.jpg','1.19855126574')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50611849@N04/5722444784/" class="face" style="background-image: url('../faces_large2/11/face14061.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2132/5722444784_ab38dfd134.jpg','0.680180042541')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68081288@N00/3385944995/" class="face" style="background-image: url('../faces_large2/8/face7683.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3446/3385944995_bb55c483c5.jpg','0.55486714311')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/63287070@N00/4542230481/" class="face" style="background-image: url('../faces_large2/24/face25099.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4014/4542230481_9e2e9e5424.jpg','0.53440893286')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/jun natsukawa.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Jun_Natsukawa">Jun Natsukawa</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

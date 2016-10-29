@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/18309730@N00/4118358889/" class="face" style="background-image: url('../faces_large2/2/face25277.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2589/4118358889_a21cbf43ec.jpg','1.0520990269')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8909796@N07/7274893538/" class="face" style="background-image: url('../faces_large2/4/face854.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7235/7274893538_181c71106b.jpg','0.998826457123')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9728593@N03/6536171361/" class="face" style="background-image: url('../faces_large2/1/face9376.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7001/6536171361_57a3e43091.jpg','0.909959156976')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67857684@N02/8065180087/" class="face" style="background-image: url('../faces_large2/6/face23506.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8034/8065180087_ac6fc55ce4.jpg','0.837407072736')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59330827@N02/8726793219/" class="face" style="background-image: url('../faces_large2/1/face2026.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7381/8726793219_3415531d6a.jpg','0.706689235333')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/melissa etheridge.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Melissa_Etheridge">Melissa Etheridge</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

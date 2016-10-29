@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/36985003@N05/4473641927/" class="face" style="background-image: url('../faces_large2/15/face17615.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2762/4473641927_074eac5ac3.jpg','1.06889400274')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/47116765@N07/11859527915/" class="face" style="background-image: url('../faces_large2/13/face21863.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5472/11859527915_2ba1592568.jpg','0.741399826883')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/13327238@N02/13892173655/" class="face" style="background-image: url('../faces_large2/17/face22217.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7066/13892173655_bb2bbe3b06.jpg','0.578782764334')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/36738753@N00/352135847/" class="face" style="background-image: url('../faces_large2/14/face13114.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/162/352135847_96e4c65844.jpg','0.558664599854')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/54405024@N00/4665408204/" class="face" style="background-image: url('../faces_large2/10/face8985.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4020/4665408204_1f11e30150.jpg','0.556658391492')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/janice dickinson.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Janice_Dickinson">Janice Dickinson</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

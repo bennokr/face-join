@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/68792237@N00/896518363/" class="face" style="background-image: url('../faces_large2/1/face13826.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1156/896518363_77e2506ec2.jpg','0.973253161081')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/32305224@N07/9484952350/" class="face" style="background-image: url('../faces_large2/1/face25701.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3812/9484952350_b8ef99f5d5.jpg','0.896005455169')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/98612536@N00/5008775994/" class="face" style="background-image: url('../faces_large2/12/face19037.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4110/5008775994_20d6888f34.jpg','0.856602964237')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26792430@N00/5491403611/" class="face" style="background-image: url('../faces_large2/7/face20182.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5060/5491403611_3f2fb2e667.jpg','0.839468821392')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50769931@N00/8177890405/" class="face" style="background-image: url('../faces_large2/19/face6894.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8480/8177890405_8b82a3fd19.jpg','0.592841988376')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/elizabeth i.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Elizabeth_I">Elizabeth I</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

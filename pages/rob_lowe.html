@@ -1,0 +1,78 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/104318622@N04/10415708223/" class="face" style="background-image: url('../faces_large2/1/face2551.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7334/10415708223_ab07488044.jpg','1.3331581999')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34427469879@N01/3270485727/" class="face" style="background-image: url('../faces_large2/21/face22771.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3523/3270485727_789311e091.jpg','0.686459333318')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26368609@N06/3074395729/" class="face" style="background-image: url('../faces_large2/4/face3404.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3018/3074395729_4b5b70177e.jpg','0.659610989992')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28990363@N05/8180369252/" class="face" style="background-image: url('../faces_large2/19/face15394.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8488/8180369252_c6646f7832.jpg','0.655652675039')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/20948708@N06/5228763748/" class="face" style="background-image: url('../faces_large2/1/face15551.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5248/5228763748_bca694d774.jpg','0.652957850277')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/54657853@N08/8008899139/" class="face" style="background-image: url('../faces_large2/23/face21223.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8181/8008899139_0bd6e05be2.jpg','0.638898783356')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46787051@N03/8313818283/" class="face" style="background-image: url('../faces_large2/10/face26535.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8359/8313818283_e9b31070a8.jpg','0.556371892574')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/rob lowe.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Rob_Lowe">Rob Lowe</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 14.2857142857%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

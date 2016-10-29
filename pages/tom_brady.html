@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/54657853@N08/8008899139/" class="face" style="background-image: url('../faces_large2/23/face21223.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8181/8008899139_0bd6e05be2.jpg','1.4245799117')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/49380681@N03/7873319352/" class="face" style="background-image: url('../faces_large2/21/face16446.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8299/7873319352_07328965c1.jpg','1.00721114744')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8466478@N02/3050392901/" class="face" style="background-image: url('../faces_large2/18/face20643.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3245/3050392901_c037021d66.jpg','0.838552982109')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/19621545@N00/36835617/" class="face" style="background-image: url('../faces_large2/11/face21536.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/23/36835617_962dc6e02a.jpg','0.741815487263')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/24280411@N06/10914729695/" class="face" style="background-image: url('../faces_large2/22/face10322.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5549/10914729695_468afec683.jpg','0.617455189193')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/41868884@N03/4530877934/" class="face" style="background-image: url('../faces_large2/14/face4289.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4016/4530877934_aff517875c.jpg','0.509618325002')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/tom brady.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Tom_Brady">Tom Brady</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/38530705@N06/8197041944/" class="face" style="background-image: url('../faces_large2/24/face11024.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8060/8197041944_2d068ca170.jpg','1.51309369316')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51035606344@N01/4064802229/" class="face" style="background-image: url('../faces_large2/10/face4610.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3529/4064802229_47103b9179.jpg','1.28081568797')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/62159892@N08/7417426166/" class="face" style="background-image: url('../faces_large2/1/face101.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7255/7417426166_0bb9f63822.jpg','1.06538396175')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65038480@N08/9624996262/" class="face" style="background-image: url('../faces_large2/8/face19383.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7345/9624996262_59f8d88535.jpg','1.01605462568')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9936928@N02/2884311576/" class="face" style="background-image: url('../faces_large2/4/face10954.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3095/2884311576_319ba84255.jpg','0.969192081761')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/58449556@N02/5505176891/" class="face" style="background-image: url('../faces_large2/11/face6436.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5060/5505176891_df761c2fca.jpg','0.542636534023')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/juliette binoche.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Juliette_Binoche">Juliette Binoche</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/32055523@N02/4314988387/" class="face" style="background-image: url('../faces_large2/9/face13809.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2780/4314988387_1706d380e6.jpg','1.12446931221')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39561962@N06/9441982888/" class="face" style="background-image: url('../faces_large2/9/face25534.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2863/9441982888_c02fdf223f.jpg','0.728476600103')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/19544186@N02/4460980352/" class="face" style="background-image: url('../faces_large2/18/face3618.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4004/4460980352_758b3d5d79.jpg','0.632176738236')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/cheryl cole.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Cheryl_Cole">Cheryl Cole</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

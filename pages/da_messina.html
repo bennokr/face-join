@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/37735007@N03/6989069504/" class="face" style="background-image: url('../faces_large2/6/face11681.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7107/6989069504_3606a9f1d7.jpg','1.48451961752')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/42921300@N00/1688942369/" class="face" style="background-image: url('../faces_large2/17/face23467.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2081/1688942369_0d566293c5.jpg','1.3517186365')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67309996@N00/125314359/" class="face" style="background-image: url('../faces_large2/24/face8824.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/49/125314359_0853db97bc.jpg','0.957965504334')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/56674957@N02/5260339984/" class="face" style="background-image: url('../faces_large2/23/face5448.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5001/5260339984_fa5b1783ec.jpg','0.826389256923')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/92426194@N00/4642051490/" class="face" style="background-image: url('../faces_large2/23/face20973.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4022/4642051490_78c10bc523.jpg','0.791778026245')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/da messina.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Da_Messina">Da Messina</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

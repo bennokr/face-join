@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/39526777@N06/8048045232/" class="face" style="background-image: url('../faces_large2/5/face14930.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8318/8048045232_a724ff5b03.jpg','1.33128911912')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53409352@N00/4978172215/" class="face" style="background-image: url('../faces_large2/16/face3941.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4151/4978172215_ebe6bc69e6.jpg','0.862616781963')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53029196@N07/7457709284/" class="face" style="background-image: url('../faces_large2/23/face18698.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8017/7457709284_28a7072ab0.jpg','0.798757892443')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7326970@N03/4804877010/" class="face" style="background-image: url('../faces_large2/0/face7600.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4138/4804877010_49441d5f07.jpg','0.727267897015')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23891763@N00/3929338951/" class="face" style="background-image: url('../faces_large2/0/face12875.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2545/3929338951_12da7a0c4a.jpg','0.552084555995')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11343498@N02/8756999682/" class="face" style="background-image: url('../faces_large2/11/face14311.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7425/8756999682_cc2a84b919.jpg','0.505556173046')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/napoleon bonaparte.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Napoleon_Bonaparte">Napoleon Bonaparte</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

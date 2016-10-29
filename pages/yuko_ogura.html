@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/61554194@N07/8938942578/" class="face" style="background-image: url('../faces_large2/2/face7077.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5442/8938942578_502f969b0d.jpg','0.761736299442')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59495878@N08/8798614238/" class="face" style="background-image: url('../faces_large2/22/face13697.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8114/8798614238_fcaf82eca5.jpg','0.623520900437')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22433507@N00/8029575197/" class="face" style="background-image: url('../faces_large2/23/face17298.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8457/8029575197_ed9ab83511.jpg','0.575472623776')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/yuko ogura.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Yuko_Ogura">Yuko Ogura</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

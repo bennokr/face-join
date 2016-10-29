@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/58890817@N05/8086330979/" class="face" style="background-image: url('../faces_large2/24/face5124.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8184/8086330979_68018e3560.jpg','1.28709177733')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59192505@N00/2088287062/" class="face" style="background-image: url('../faces_large2/8/face25933.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2087/2088287062_90d72a7fcb.jpg','0.900307744946')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/91188896@N03/8283054838/" class="face" style="background-image: url('../faces_large2/17/face7167.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8223/8283054838_59ccd99d01.jpg','0.836897367169')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8501872@N03/12579733603/" class="face" style="background-image: url('../faces_large2/18/face8868.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3706/12579733603_2e8dacea11.jpg','0.827620705038')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8143864@N07/2576962581/" class="face" style="background-image: url('../faces_large2/15/face6290.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3168/2576962581_5c5e57e6a3.jpg','0.57369567798')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/20756593@N00/3671547823/" class="face" style="background-image: url('../faces_large2/6/face1431.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3307/3671547823_ec44f24918.jpg','0.531931095548')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/michael rosenbaum.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Michael_Rosenbaum">Michael Rosenbaum</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/65725927@N00/235292450/" class="face" style="background-image: url('../faces_large2/0/face17800.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/89/235292450_c9cd8a4813.jpg','1.17339417664')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/47282646@N06/4339944499/" class="face" style="background-image: url('../faces_large2/3/face18953.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2769/4339944499_2f6f2ba42f.jpg','0.77942705266')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/38242646@N07/4697773869/" class="face" style="background-image: url('../faces_large2/7/face11482.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4038/4697773869_6bb06079a2.jpg','0.667746444166')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/60326074@N03/8531807164/" class="face" style="background-image: url('../faces_large2/7/face5032.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8376/8531807164_a11213ee19.jpg','0.573586689489')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/64044625@N06/6310031050/" class="face" style="background-image: url('../faces_large2/24/face4799.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6103/6310031050_336a9ac133.jpg','0.502691423951')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/michael bolton.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Michael_Bolton">Michael Bolton</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,72 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/70724137@N05/8572215903/" class="face" style="background-image: url('../faces_large2/16/face1341.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8245/8572215903_9683053bd8.jpg','1.05479101239')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34132370@N00/7481052746/" class="face" style="background-image: url('../faces_large2/16/face25216.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8147/7481052746_df3cabfb11.jpg','0.898830495391')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/82298325@N00/256288466/" class="face" style="background-image: url('../faces_large2/8/face15233.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/99/256288466_b062be7ecc.jpg','0.691891217513')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71721529@N05/6602393057/" class="face" style="background-image: url('../faces_large2/4/face8104.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7153/6602393057_863ef40d54.jpg','0.525392656122')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ethan hawke.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ethan_Hawke">Ethan Hawke</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 25.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

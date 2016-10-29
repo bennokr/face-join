@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/42921300@N00/1688942369/" class="face" style="background-image: url('../faces_large2/17/face23467.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2081/1688942369_0d566293c5.jpg','1.03154691283')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67309996@N00/125314359/" class="face" style="background-image: url('../faces_large2/24/face8824.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/49/125314359_0853db97bc.jpg','0.909918942202')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53771684@N04/5892488156/" class="face" style="background-image: url('../faces_large2/14/face16064.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5310/5892488156_c49faea041.jpg','0.773555296171')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/frank lampard.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Frank_Lampard">Frank Lampard</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

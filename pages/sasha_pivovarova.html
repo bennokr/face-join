@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/11300234@N02/4822427720/" class="face" style="background-image: url('../faces_large2/20/face17945.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4081/4822427720_9720f017ec.jpg','1.23854950922')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/58820009@N05/6441068105/" class="face" style="background-image: url('../faces_large2/0/face8125.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7031/6441068105_ef12bd043f.jpg','0.94787314279')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50939846@N00/17294356/" class="face" style="background-image: url('../faces_large2/18/face12868.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/12/17294356_8245c2009d.jpg','0.656955465418')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/47427109@N05/5839640210/" class="face" style="background-image: url('../faces_large2/20/face12345.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3096/5839640210_b74e25f85f.jpg','0.634334425917')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/61098690@N00/5089267952/" class="face" style="background-image: url('../faces_large2/15/face2090.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4110/5089267952_7428ffcc69.jpg','0.627070677162')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9609087@N08/4582915830/" class="face" style="background-image: url('../faces_large2/15/face7365.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4023/4582915830_c6b5384ef7.jpg','0.556653780908')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/sasha pivovarova.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Sasha_Pivovarova">Sasha Pivovarova</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

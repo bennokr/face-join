@@ -1,0 +1,86 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/55579714@N00/2087659887/" class="face" style="background-image: url('../faces_large2/14/face739.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2355/2087659887_4fbb933bdd.jpg','1.76464092755')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7702423@N04/5239903176/" class="face" style="background-image: url('../faces_large2/4/face14454.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5287/5239903176_696e01519d.jpg','1.55951951063')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/17364099@N00/122121566/" class="face" style="background-image: url('../faces_large2/19/face7144.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/36/122121566_22ba3fd789.jpg','1.24353318212')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29456680@N06/8367087486/" class="face" style="background-image: url('../faces_large2/5/face2980.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8358/8367087486_d9a4703d93.jpg','1.17864520796')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/44460806@N06/7538201930/" class="face" style="background-image: url('../faces_large2/3/face8578.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8008/7538201930_4430aac14f.jpg','1.05924617906')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/77267853@N02/8618066071/" class="face" style="background-image: url('../faces_large2/24/face18099.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8245/8618066071_44acbe74e1.jpg','1.04043683782')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/89368540@N04/8136148410/" class="face" style="background-image: url('../faces_large2/0/face25100.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8189/8136148410_167e612d12.jpg','0.922280503752')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22457852@N00/146587367/" class="face" style="background-image: url('../faces_large2/13/face12963.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/48/146587367_61970eac88.jpg','0.757483512925')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46907600@N02/6170297583/" class="face" style="background-image: url('../faces_large2/1/face5051.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6174/6170297583_85e5bebaa5.jpg','0.619624931247')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26292851@N04/2466914057/" class="face" style="background-image: url('../faces_large2/15/face18190.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2120/2466914057_283834af72.jpg','0.556563462265')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/95459002@N08/11468848445/" class="face" style="background-image: url('../faces_large2/1/face4726.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7439/11468848445_69244be84b.jpg','0.540611615341')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/marvin gaye.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Marvin_Gaye">Marvin Gaye</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 9.09090909091%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

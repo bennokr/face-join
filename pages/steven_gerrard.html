@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/49124213@N00/11687008974/" class="face" style="background-image: url('../faces_large2/19/face21169.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3783/11687008974_25a5f64037.jpg','1.24037751909')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50198301@N07/8070882899/" class="face" style="background-image: url('../faces_large2/12/face1062.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8180/8070882899_1a1f49bd76.jpg','0.82428672328')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/63709829@N00/5041096899/" class="face" style="background-image: url('../faces_large2/7/face23082.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4128/5041096899_3f5553a0f9.jpg','0.787050967464')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22620970@N04/5141383396/" class="face" style="background-image: url('../faces_large2/10/face8685.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4149/5141383396_b6d1356b36.jpg','0.702796045795')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/47282646@N06/4339944499/" class="face" style="background-image: url('../faces_large2/3/face18953.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2769/4339944499_2f6f2ba42f.jpg','0.665606496101')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11685418@N00/134129911/" class="face" style="background-image: url('../faces_large2/3/face553.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/52/134129911_b4951de938.jpg','0.512053495032')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/steven gerrard.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Steven_Gerrard">Steven Gerrard</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

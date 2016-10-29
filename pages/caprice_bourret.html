@@ -1,0 +1,78 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/10845359@N02/4483097371/" class="face" style="background-image: url('../faces_large2/7/face9982.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2679/4483097371_79f2e82fb6.jpg','1.70285379274')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21272155@N00/2412697337/" class="face" style="background-image: url('../faces_large2/20/face19695.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2273/2412697337_11bdbfdace.jpg','1.49372285769')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/7634194842/" class="face" style="background-image: url('../faces_large2/14/face3714.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7262/7634194842_54965ed52d.jpg','1.15115432589')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/8212593500/" class="face" style="background-image: url('../faces_large2/18/face24418.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8488/8212593500_7c9894d05e.jpg','1.02713500719')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65725927@N00/235292450/" class="face" style="background-image: url('../faces_large2/1/face17801.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/89/235292450_c9cd8a4813.jpg','0.903465715296')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21383568@N00/388107026/" class="face" style="background-image: url('../faces_large2/0/face21975.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/183/388107026_53dc9fecc4.jpg','0.551990000996')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9624992@N04/2088760370/" class="face" style="background-image: url('../faces_large2/10/face6785.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2234/2088760370_baa051652a.jpg','0.507807016959')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/caprice bourret.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Caprice_Bourret">Caprice Bourret</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 14.2857142857%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

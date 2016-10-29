@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/73488908@N00/1451470897/" class="face" style="background-image: url('../faces_large2/11/face13936.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1357/1451470897_81b45f745a.jpg','0.998972360741')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/87933807@N00/2252834661/" class="face" style="background-image: url('../faces_large2/20/face25795.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2336/2252834661_1bee23bbc0.jpg','0.944413515208')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/12851263@N08/4986341475/" class="face" style="background-image: url('../faces_large2/3/face3303.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4110/4986341475_34ee873c4e.jpg','0.728897318881')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/80590502@N07/7415705998/" class="face" style="background-image: url('../faces_large2/11/face4986.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7140/7415705998_c79a28e74e.jpg','0.651915929538')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/74814994@N00/4131424938/" class="face" style="background-image: url('../faces_large2/18/face768.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2669/4131424938_390951ea85.jpg','0.645942494508')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/42625801@N07/10593488193/" class="face" style="background-image: url('../faces_large2/12/face13012.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5503/10593488193_177268e366.jpg','0.515254604524')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/tricia helfer.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Tricia_Helfer">Tricia Helfer</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

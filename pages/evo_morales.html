@@ -1,0 +1,82 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/28794584@N07/6749749313/" class="face" style="background-image: url('../faces_large2/14/face16089.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7021/6749749313_4e9ddbe191.jpg','1.58926782416')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/56053213@N00/159355748/" class="face" style="background-image: url('../faces_large2/21/face15796.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/61/159355748_b742a71319.jpg','0.992678271262')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/15413757@N00/9743596/" class="face" style="background-image: url('../faces_large2/21/face19846.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/5/9743596_cf053c323d.jpg','0.937803343648')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/45074859@N08/4930314558/" class="face" style="background-image: url('../faces_large2/18/face9118.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4120/4930314558_1d99f97874.jpg','0.864960613786')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/44124427152@N01/19418982/" class="face" style="background-image: url('../faces_large2/8/face26958.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/13/19418982_24f29ee619.jpg','0.847518750473')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/92018652@N07/12210185644/" class="face" style="background-image: url('../faces_large2/19/face22769.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5472/12210185644_5cf181bcb4.jpg','0.842173048129')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9220320@N08/4067387299/" class="face" style="background-image: url('../faces_large2/18/face9568.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2516/4067387299_0b073d90fe.jpg','0.822693337627')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/31398528@N03/4725819780/" class="face" style="background-image: url('../faces_large2/21/face18971.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1112/4725819780_dfd8c49c1c.jpg','0.821370475612')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/69537079@N00/3446078469/" class="face" style="background-image: url('../faces_large2/4/face10554.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3586/3446078469_149300afec.jpg','0.504536456892')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/evo morales.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Evo_Morales">Evo Morales</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 11.1111111111%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

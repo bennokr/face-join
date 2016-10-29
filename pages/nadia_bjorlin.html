@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/96233793@N03/8799219163/" class="face" style="background-image: url('../faces_large2/23/face1348.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2848/8799219163_85c07530e3.jpg','1.02331369472')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39561962@N06/13938419781/" class="face" style="background-image: url('../faces_large2/15/face17065.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7079/13938419781_4fb59b8d84.jpg','0.557386531682')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/86158499@N00/9090437376/" class="face" style="background-image: url('../faces_large2/9/face7609.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7360/9090437376_006f96e197.jpg','0.55104654111')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/nadia bjorlin.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Nadia_Bjorlin">Nadia Bjorlin</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

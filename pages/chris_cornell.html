@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/60697241@N00/3283934403/" class="face" style="background-image: url('../faces_large2/18/face13918.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3174/3283934403_b0719fca2b.jpg','0.863047696818')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/47391132@N00/423350649/" class="face" style="background-image: url('../faces_large2/0/face8825.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/130/423350649_1faf5cb2ae.jpg','0.81626058601')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/61026051@N00/62724405/" class="face" style="background-image: url('../faces_large2/2/face13902.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/33/62724405_4ec71fc582.jpg','0.794421187341')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67668734@N00/1513355595/" class="face" style="background-image: url('../faces_large2/1/face4551.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2305/1513355595_a30d3b45c3.jpg','0.695706667275')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21044291@N00/5149246863/" class="face" style="background-image: url('../faces_large2/5/face18780.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4069/5149246863_34ba20aafd.jpg','0.677386760991')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/35254977@N08/5954185990/" class="face" style="background-image: url('../faces_large2/24/face6324.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6128/5954185990_af18403910.jpg','0.609393068466')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/chris cornell.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Chris_Cornell">Chris Cornell</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

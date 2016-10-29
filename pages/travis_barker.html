@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/39015696@N02/13754965204/" class="face" style="background-image: url('../faces_large2/13/face3738.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2896/13754965204_e9a0c09623.jpg','1.87474054828')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/97654045@N00/4944354755/" class="face" style="background-image: url('../faces_large2/7/face19307.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4078/4944354755_a0084fdd9b.jpg','1.67749248629')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/33709006@N08/3407828859/" class="face" style="background-image: url('../faces_large2/13/face6638.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3589/3407828859_75fe1f2ca4.jpg','0.735909813215')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/35999763@N08/5348533470/" class="face" style="background-image: url('../faces_large2/9/face9984.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5243/5348533470_cdbf3831bd.jpg','0.639291265959')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46124963@N03/10724775423/" class="face" style="background-image: url('../faces_large2/10/face10560.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2835/10724775423_c5fa402a2f.jpg','0.553921747331')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/travis barker.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Travis_Barker">Travis Barker</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

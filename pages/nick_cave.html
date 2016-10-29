@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/37649571@N00/53606143/" class="face" style="background-image: url('../faces_large2/5/face7055.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/31/53606143_e9f5525431.jpg','1.20826853939')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/81523122@N06/12257871864/" class="face" style="background-image: url('../faces_large2/11/face2411.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7355/12257871864_2f3beb5909.jpg','1.07036659368')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/17562308@N02/3969628921/" class="face" style="background-image: url('../faces_large2/21/face16221.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3495/3969628921_a6c4a153a8.jpg','1.04056850526')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/70217866@N00/5605323050/" class="face" style="background-image: url('../faces_large2/5/face4705.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5110/5605323050_6f3676ffc2.jpg','0.863547006915')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/27431349@N03/5582346683/" class="face" style="background-image: url('../faces_large2/21/face12196.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5181/5582346683_6af98f4506.jpg','0.761536636386')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/nick cave.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Nick_Cave">Nick Cave</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

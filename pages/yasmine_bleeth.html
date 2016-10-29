@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/51669020@N06/8728106295/" class="face" style="background-image: url('../faces_large2/5/face605.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7303/8728106295_86e3933b68.jpg','0.959942493046')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68734425@N07/8464190445/" class="face" style="background-image: url('../faces_large2/7/face23457.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8244/8464190445_4f43346c90.jpg','0.811207099231')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/6387850955/" class="face" style="background-image: url('../faces_large2/1/face7701.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6108/6387850955_0f80cdd8a0.jpg','0.735892657178')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/yasmine bleeth.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Yasmine_Bleeth">Yasmine Bleeth</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

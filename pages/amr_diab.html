@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/29252401@N05/5566874751/" class="face" style="background-image: url('../faces_large2/18/face7093.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5259/5566874751_d01ed5192a.jpg','1.02571162244')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11759012@N00/1401924098/" class="face" style="background-image: url('../faces_large2/22/face9497.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1252/1401924098_98c96722d3.jpg','0.942401694494')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67324379@N03/6917941114/" class="face" style="background-image: url('../faces_large2/2/face2277.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5035/6917941114_a8b4b91758.jpg','0.770621575637')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/amr diab.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Amr_Diab">Amr Diab</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

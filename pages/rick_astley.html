@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/31597761@N00/339976247/" class="face" style="background-image: url('../faces_large2/8/face14733.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/126/339976247_48650e8c14.jpg','0.793506925406')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/99083344@N08/9391268685/" class="face" style="background-image: url('../faces_large2/4/face23629.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5441/9391268685_e26a566f14.jpg','0.699992384384')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50073358@N05/4600442634/" class="face" style="background-image: url('../faces_large2/23/face4898.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4050/4600442634_c338995c38.jpg','0.658900258798')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/rick astley.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Rick_Astley">Rick Astley</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

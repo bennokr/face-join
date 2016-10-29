@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/32456461@N05/6830619934/" class="face" style="background-image: url('../faces_large2/9/face13834.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7069/6830619934_5a38fc4638.jpg','0.834401248347')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28778325@N07/6866681932/" class="face" style="background-image: url('../faces_large2/10/face17560.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6240/6866681932_546c3ee128.jpg','0.700268408042')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/24022566@N02/4774549374/" class="face" style="background-image: url('../faces_large2/12/face11962.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4120/4774549374_4247146aac.jpg','0.52565276061')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ava gardner.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ava_Gardner">Ava Gardner</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

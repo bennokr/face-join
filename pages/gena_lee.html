@@ -1,0 +1,80 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/55993134@N05/6789600293/" class="face" style="background-image: url('../faces_large2/18/face18818.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7003/6789600293_7b2cc0c0cb.jpg','1.487490998')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/10845359@N02/4483097371/" class="face" style="background-image: url('../faces_large2/7/face9982.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2679/4483097371_79f2e82fb6.jpg','0.951945956467')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26806380@N00/8588444969/" class="face" style="background-image: url('../faces_large2/12/face24287.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8089/8588444969_50108db5ea.jpg','0.797460410214')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22007612@N05/9340235159/" class="face" style="background-image: url('../faces_large2/12/face24012.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7382/9340235159_be20a62ab6.jpg','0.69196506574')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29789073@N00/4141531571/" class="face" style="background-image: url('../faces_large2/8/face8308.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2606/4141531571_e8090ccda1.jpg','0.591312689932')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/97644214@N00/4826306512/" class="face" style="background-image: url('../faces_large2/8/face25883.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4079/4826306512_90daf1552d.jpg','0.569532793128')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/47116765@N07/11859527915/" class="face" style="background-image: url('../faces_large2/13/face21863.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5472/11859527915_2ba1592568.jpg','0.547757620745')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/38174668@N05/5391956492/" class="face" style="background-image: url('../faces_large2/12/face23287.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5217/5391956492_51340c6237.jpg','0.519554058147')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/gena lee.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Gena_Lee">Gena Lee</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 12.5%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/52619519@N00/3053506271/" class="face" style="background-image: url('../faces_large2/24/face7199.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3190/3053506271_d497252701.jpg','1.07172019253')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68746223@N00/5653209094/" class="face" style="background-image: url('../faces_large2/0/face5300.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5022/5653209094_f1690d7e1c.jpg','1.05225320356')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39412520@N03/9380912194/" class="face" style="background-image: url('../faces_large2/20/face15770.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3834/9380912194_4f5b4e8f94.jpg','0.616504956014')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/56674957@N02/5260339984/" class="face" style="background-image: url('../faces_large2/24/face5449.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5001/5260339984_fa5b1783ec.jpg','0.579562027051')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/15413757@N00/4373975480/" class="face" style="background-image: url('../faces_large2/3/face13753.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4031/4373975480_263c7914df.jpg','0.532959619312')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53746192@N00/6986390795/" class="face" style="background-image: url('../faces_large2/11/face2311.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7207/6986390795_6cbc6bdae5.jpg','0.511693118947')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/vidya balan.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Vidya_Balan">Vidya Balan</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,88 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/10488448@N00/209812011/" class="face" style="background-image: url('../faces_large2/22/face2647.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/79/209812011_73bfca7e58.jpg','1.28212011311')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65725927@N00/235292450/" class="face" style="background-image: url('../faces_large2/1/face17801.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/89/235292450_c9cd8a4813.jpg','1.1853340755')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59874422@N00/252600420/" class="face" style="background-image: url('../faces_large2/14/face2339.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/102/252600420_e9f5ea4131.jpg','1.16973521255')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9624992@N04/2088760370/" class="face" style="background-image: url('../faces_large2/10/face6785.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2234/2088760370_baa051652a.jpg','1.0436628869')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29603282@N00/415525009/" class="face" style="background-image: url('../faces_large2/1/face8826.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/150/415525009_5d410b3b6e.jpg','0.886961965179')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/73488908@N00/1451470897/" class="face" style="background-image: url('../faces_large2/11/face13936.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1357/1451470897_81b45f745a.jpg','0.656735352477')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34507360@N00/5012552891/" class="face" style="background-image: url('../faces_large2/12/face15812.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4083/5012552891_9f53f0a572.jpg','0.656735352477')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/20948708@N06/3541567657/" class="face" style="background-image: url('../faces_large2/23/face23298.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3548/3541567657_da55474183.jpg','0.636455886321')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/6387850955/" class="face" style="background-image: url('../faces_large2/1/face7701.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6108/6387850955_0f80cdd8a0.jpg','0.600131620695')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/38174668@N05/5391956492/" class="face" style="background-image: url('../faces_large2/12/face23287.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5217/5391956492_51340c6237.jpg','0.572655497118')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/10808347@N08/6221569653/" class="face" style="background-image: url('../faces_large2/19/face194.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6093/6221569653_5d17244891.jpg','0.522708015583')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/60062220@N00/32974246/" class="face" style="background-image: url('../faces_large2/5/face20680.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/21/32974246_ffeb4ef307.jpg','0.506879740228')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/faith hill.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Faith_Hill">Faith Hill</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 8.33333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

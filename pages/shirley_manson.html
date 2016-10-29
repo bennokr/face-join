@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/44094498@N03/8868546635/" class="face" style="background-image: url('../faces_large2/10/face21060.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3820/8868546635_e41fdfa01d.jpg','1.32779960968')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/42229135@N00/7697474546/" class="face" style="background-image: url('../faces_large2/23/face24773.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8167/7697474546_1f4d17a9f9.jpg','1.30156021474')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/44334381@N04/6642955977/" class="face" style="background-image: url('../faces_large2/1/face23826.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7171/6642955977_effb59983d.jpg','1.0879714091')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/43917904@N04/6508571553/" class="face" style="background-image: url('../faces_large2/23/face73.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7018/6508571553_fb9affacae.jpg','0.916018289351')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51587266@N06/6942250275/" class="face" style="background-image: url('../faces_large2/21/face15246.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7206/6942250275_9c979ed128.jpg','0.76736915196')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/33394998@N00/13307350995/" class="face" style="background-image: url('../faces_large2/22/face12997.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7149/13307350995_56e59475e8.jpg','0.691510212774')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/shirley manson.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Shirley_Manson">Shirley Manson</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

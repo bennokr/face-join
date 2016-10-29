@@ -1,0 +1,92 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/33589304@N02/4731403382/" class="face" style="background-image: url('../faces_large2/5/face280.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1088/4731403382_dfc77e3753.jpg','0.765783369685')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/49798735@N00/8165407013/" class="face" style="background-image: url('../faces_large2/3/face8803.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7280/8165407013_87f5e8c38c.jpg','0.637502969543')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25626268@N00/2343567671/" class="face" style="background-image: url('../faces_large2/1/face22401.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2064/2343567671_4bcaaa9af0.jpg','0.632730680229')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/101113660@N03/9697105189/" class="face" style="background-image: url('../faces_large2/5/face8030.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5483/9697105189_8126728d56.jpg','0.612788794829')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/87862342@N00/10654571166/" class="face" style="background-image: url('../faces_large2/19/face9719.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5471/10654571166_97aacde86a.jpg','0.580640458735')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7230543@N03/5236515813/" class="face" style="background-image: url('../faces_large2/15/face10515.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5202/5236515813_cb16caf618.jpg','0.579129465763')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/109852204@N05/11082858024/" class="face" style="background-image: url('../faces_large2/21/face20096.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5537/11082858024_26be713afc.jpg','0.56688947156')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/44124366799@N01/18095510/" class="face" style="background-image: url('../faces_large2/20/face22595.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/13/18095510_8de4ebfb4f.jpg','0.557305001603')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/60136821@N03/6865104133/" class="face" style="background-image: url('../faces_large2/15/face4340.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7178/6865104133_d566dfc839.jpg','0.550432536075')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/77698630@N00/236887514/" class="face" style="background-image: url('../faces_large2/16/face5066.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/90/236887514_3fe3569358.jpg','0.54787350703')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34182225@N05/4049640640/" class="face" style="background-image: url('../faces_large2/13/face5788.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2673/4049640640_1e5f217a3a.jpg','0.524483175193')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/82756760@N00/9506854658/" class="face" style="background-image: url('../faces_large2/16/face17066.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5461/9506854658_26de6081aa.jpg','0.515698162731')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65480807@N06/6329620521/" class="face" style="background-image: url('../faces_large2/12/face13462.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6228/6329620521_6b5f25310a.jpg','0.514252655293')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/30863712@N06/3073372431/" class="face" style="background-image: url('../faces_large2/7/face5182.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3223/3073372431_c9237e9bc5.jpg','0.510443157118')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/aleister crowley.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Aleister_Crowley">Aleister Crowley</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 7.14285714286%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

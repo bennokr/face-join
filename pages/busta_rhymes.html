@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/66963159@N00/32867913/" class="face" style="background-image: url('../faces_large2/10/face9685.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/22/32867913_c3f6888e39.jpg','1.04011843509')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/62507322@N03/8891513231/" class="face" style="background-image: url('../faces_large2/9/face17659.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7426/8891513231_e387829865.jpg','0.923286578676')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53299673@N06/6808019564/" class="face" style="background-image: url('../faces_large2/17/face3967.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7188/6808019564_c045ec97d3.jpg','0.668506884109')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/10647361@N07/4270389844/" class="face" style="background-image: url('../faces_large2/23/face12173.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4025/4270389844_1740935a75.jpg','0.625713032608')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/91462563@N00/2603114799/" class="face" style="background-image: url('../faces_large2/20/face11470.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3108/2603114799_1bf888992f.jpg','0.560437966407')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/busta rhymes.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Busta_Rhymes">Busta Rhymes</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

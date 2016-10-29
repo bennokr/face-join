@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/36099730@N00/7907218304/" class="face" style="background-image: url('../faces_large2/10/face10660.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8311/7907218304_85059ee6c8.jpg','0.976661748377')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/77867693@N05/8587468702/" class="face" style="background-image: url('../faces_large2/13/face9138.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8380/8587468702_08c7de84cb.jpg','0.781692145672')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21905196@N07/12097209346/" class="face" style="background-image: url('../faces_large2/4/face19879.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5494/12097209346_e391464508.jpg','0.667700517895')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53771684@N04/5892488156/" class="face" style="background-image: url('../faces_large2/15/face16065.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5310/5892488156_c49faea041.jpg','0.608394807631')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23175922@N04/11468049513/" class="face" style="background-image: url('../faces_large2/17/face17317.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5487/11468049513_4d968d6353.jpg','0.5047196368')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/nancy pelosi.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Nancy_Pelosi">Nancy Pelosi</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

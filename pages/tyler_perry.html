@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/30937273@N06/8673358956/" class="face" style="background-image: url('../faces_large2/19/face9044.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8261/8673358956_bf8099a6d9.jpg','1.29314463946')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28721558@N07/4179019479/" class="face" style="background-image: url('../faces_large2/15/face22190.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2759/4179019479_baf18f4767.jpg','0.987901352207')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/10647361@N07/4270389844/" class="face" style="background-image: url('../faces_large2/23/face12173.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4025/4270389844_1740935a75.jpg','0.712217001966')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7158807@N05/5721254932/" class="face" style="background-image: url('../faces_large2/14/face25239.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2754/5721254932_5044f03e4a.jpg','0.631293562454')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25209633@N07/4563830434/" class="face" style="background-image: url('../faces_large2/20/face21270.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3041/4563830434_687ed4ddde.jpg','0.608160218033')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/43937720@N00/3067468798/" class="face" style="background-image: url('../faces_large2/1/face15101.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3245/3067468798_b1867fce4e.jpg','0.551511747859')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/tyler perry.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Tyler_Perry">Tyler Perry</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

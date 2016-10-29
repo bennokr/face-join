@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/11076656@N04/3685545406/" class="face" style="background-image: url('../faces_large2/21/face17921.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2531/3685545406_5579686162.jpg','1.45637467368')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/32619231@N02/13563645944/" class="face" style="background-image: url('../faces_large2/3/face2578.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7125/13563645944_aeafaf5d7b.jpg','0.716683733161')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/30829182@N08/7694547660/" class="face" style="background-image: url('../faces_large2/4/face9629.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7260/7694547660_c97e47e66c.jpg','0.640368290786')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67309996@N00/125314359/" class="face" style="background-image: url('../faces_large2/24/face8824.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/49/125314359_0853db97bc.jpg','0.576311455077')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/87728159@N00/3864282251/" class="face" style="background-image: url('../faces_large2/0/face9975.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3505/3864282251_62d53406d4.jpg','0.546776039267')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51115320@N00/5943784786/" class="face" style="background-image: url('../faces_large2/16/face22866.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6028/5943784786_bddfe933b0.jpg','0.505505462286')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/paul simon.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Paul_Simon">Paul Simon</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

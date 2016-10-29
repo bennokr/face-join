@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/76003997@N07/7919285282/" class="face" style="background-image: url('../faces_large2/9/face21884.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8171/7919285282_f80e8ecc7a.jpg','0.84468566045')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/44777829@N06/4885794586/" class="face" style="background-image: url('../faces_large2/6/face2606.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4074/4885794586_8cd2953a6f.jpg','0.754163215902')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/48734911@N00/5162437223/" class="face" style="background-image: url('../faces_large2/10/face8310.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1120/5162437223_d52e9a2212.jpg','0.702368659591')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14508943@N00/8748187967/" class="face" style="background-image: url('../faces_large2/10/face2560.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7291/8748187967_7f1d11583c.jpg','0.683712920136')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11304144@N00/162506835/" class="face" style="background-image: url('../faces_large2/13/face4513.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/69/162506835_a97e9bd523.jpg','0.585451868891')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/george soros.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/George_Soros">George Soros</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

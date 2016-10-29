@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/9965026@N02/6796289642/" class="face" style="background-image: url('../faces_large2/4/face13904.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7183/6796289642_930ff1a2ce.jpg','0.632319243836')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/63159068@N00/5050812152/" class="face" style="background-image: url('../faces_large2/10/face4210.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4124/5050812152_cb73871eef.jpg','0.567040398971')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/42121221@N07/8050597378/" class="face" style="background-image: url('../faces_large2/20/face11170.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8457/8050597378_67f8fab06a.jpg','0.538277961846')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/bernie mac.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Bernie_Mac">Bernie Mac</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,78 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/95704119@N08/11333499953/" class="face" style="background-image: url('../faces_large2/1/face8726.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5506/11333499953_324b9694d9.jpg','1.025615528')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23465276@N04/8303993840/" class="face" style="background-image: url('../faces_large2/9/face2784.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8362/8303993840_e055a3e100.jpg','0.674979825874')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79383703@N08/8224653468/" class="face" style="background-image: url('../faces_large2/15/face8540.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8483/8224653468_947323d9e1.jpg','0.628365839358')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/109550159@N08/11054445065/" class="face" style="background-image: url('../faces_large2/7/face13532.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7369/11054445065_09c7628f6b.jpg','0.590346109385')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/35558720@N03/7251350372/" class="face" style="background-image: url('../faces_large2/14/face8789.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7094/7251350372_d0d5a0b7c4.jpg','0.544125159276')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/24005317@N07/10888811256/" class="face" style="background-image: url('../faces_large2/15/face26765.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2809/10888811256_fee7d9da21.jpg','0.541417277975')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/80590502@N07/7402903152/" class="face" style="background-image: url('../faces_large2/7/face14982.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7242/7402903152_478416fd4c.jpg','0.506873796302')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/john cleese.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/John_Cleese">John Cleese</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 14.2857142857%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

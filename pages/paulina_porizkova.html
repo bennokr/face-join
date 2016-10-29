@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/27238804@N03/12293693723/" class="face" style="background-image: url('../faces_large2/2/face2477.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3697/12293693723_c2daec84da.jpg','0.669074578149')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/82298625@N00/8128323609/" class="face" style="background-image: url('../faces_large2/1/face25651.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8470/8128323609_25454f46c0.jpg','0.584109455479')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22134952@N04/2767645582/" class="face" style="background-image: url('../faces_large2/18/face22943.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3066/2767645582_a1ba0c05e1.jpg','0.502965338687')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/paulina porizkova.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Paulina_Porizkova">Paulina Porizkova</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

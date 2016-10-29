@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/52072922@N00/3346644418/" class="face" style="background-image: url('../faces_large2/12/face14687.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3399/3346644418_e7fde378e6.jpg','1.74730746492')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/49124213@N00/11687008974/" class="face" style="background-image: url('../faces_large2/19/face21169.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3783/11687008974_25a5f64037.jpg','1.62282742738')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7902659@N07/7411485782/" class="face" style="background-image: url('../faces_large2/17/face16967.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5338/7411485782_ef3ea51d25.jpg','0.873693811896')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/75732205@N04/10974944016/" class="face" style="background-image: url('../faces_large2/21/face14546.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3745/10974944016_89d9dcbdc8.jpg','0.713811632486')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/49612039@N03/4767922041/" class="face" style="background-image: url('../faces_large2/19/face11019.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4100/4767922041_67aa8fae94.jpg','0.644666435468')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/44124460403@N01/6301383506/" class="face" style="background-image: url('../faces_large2/1/face3101.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6049/6301383506_5379baa9fa.jpg','0.575623435924')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/bryan adams.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Bryan_Adams">Bryan Adams</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

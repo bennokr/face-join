@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/37936896@N02/3491268754/" class="face" style="background-image: url('../faces_large2/8/face11983.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3564/3491268754_d4283c1983.jpg','1.44311185019')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46911842@N07/8720931389/" class="face" style="background-image: url('../faces_large2/14/face20964.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7431/8720931389_8a082384a8.jpg','0.851930061732')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/77182645@N00/82511784/" class="face" style="background-image: url('../faces_large2/3/face25503.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/42/82511784_39dc793a75.jpg','0.731013636834')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/52539720@N07/5788091774/" class="face" style="background-image: url('../faces_large2/11/face4786.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3390/5788091774_d42f4896c3.jpg','0.567602628059')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/60599186@N00/748049649/" class="face" style="background-image: url('../faces_large2/22/face5947.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1425/748049649_3ca19e53f4.jpg','0.529086004985')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/bob hope.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Bob_Hope">Bob Hope</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

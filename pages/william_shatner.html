@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/33027884@N07/9094894052/" class="face" style="background-image: url('../faces_large2/22/face3622.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2826/9094894052_9ab2de0ed3.jpg','1.17501189312')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8859589@N02/4933311499/" class="face" style="background-image: url('../faces_large2/14/face24764.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4093/4933311499_a91140208e.jpg','1.1571402351')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/77456049@N00/3226186118/" class="face" style="background-image: url('../faces_large2/2/face8127.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3514/3226186118_ab4187c39b.jpg','1.12848161904')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25626268@N00/2343567671/" class="face" style="background-image: url('../faces_large2/4/face22404.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2064/2343567671_4bcaaa9af0.jpg','0.804573787516')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/20768764@N08/5218060993/" class="face" style="background-image: url('../faces_large2/2/face102.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4127/5218060993_5cf95deb77.jpg','0.684846984487')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/19729585@N00/1553801446/" class="face" style="background-image: url('../faces_large2/4/face16879.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2021/1553801446_0e97d80342.jpg','0.501933686313')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/william shatner.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/William_Shatner">William Shatner</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

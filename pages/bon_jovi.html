@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/11993628@N00/9377527705/" class="face" style="background-image: url('../faces_large2/16/face7016.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7332/9377527705_cd545eeb46.jpg','1.43304271479')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14495405@N00/3030603380/" class="face" style="background-image: url('../faces_large2/0/face6975.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3285/3030603380_4b4c700c72.jpg','1.28822503579')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34838158@N00/2206970239/" class="face" style="background-image: url('../faces_large2/2/face4352.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2169/2206970239_71ce24f4ab.jpg','0.775152788199')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79775161@N00/5422577251/" class="face" style="background-image: url('../faces_large2/2/face24777.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5100/5422577251_b5460e57fa.jpg','0.769076227523')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/89588236@N00/3379327448/" class="face" style="background-image: url('../faces_large2/20/face695.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3457/3379327448_e8672ac03b.jpg','0.673519549098')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/69795809@N00/3540311761/" class="face" style="background-image: url('../faces_large2/17/face24292.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3367/3540311761_d7493e380d.jpg','0.649338316591')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/bon jovi.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Bon_Jovi">Bon Jovi</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

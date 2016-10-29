@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/33274213@N07/8669315379/" class="face" style="background-image: url('../faces_large2/13/face1213.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8529/8669315379_c05cb8c513.jpg','0.965761109827')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28520161@N06/4033625264/" class="face" style="background-image: url('../faces_large2/13/face4213.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2492/4033625264_bc5baf85e2.jpg','0.945638235256')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/106963474@N02/11524331744/" class="face" style="background-image: url('../faces_large2/2/face3077.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5474/11524331744_ea940422b6.jpg','0.876417843913')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/99976517@N00/5408935371/" class="face" style="background-image: url('../faces_large2/11/face12886.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4128/5408935371_ed6a4ea245.jpg','0.761354716419')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51332976@N00/8089375146/" class="face" style="background-image: url('../faces_large2/10/face13860.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8334/8089375146_61274404cb.jpg','0.520656450585')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/lisa ray.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Lisa_Ray">Lisa Ray</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

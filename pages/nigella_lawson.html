@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/41374393@N07/6290474682/" class="face" style="background-image: url('../faces_large2/7/face20907.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6044/6290474682_ac6624e012.jpg','0.943229041143')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8001265@N08/2272286430/" class="face" style="background-image: url('../faces_large2/23/face19798.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2210/2272286430_a746ac957a.jpg','0.739263754724')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79045485@N00/295042050/" class="face" style="background-image: url('../faces_large2/9/face3134.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/101/295042050_32c5a3a83e.jpg','0.598380648748')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/32055523@N02/4314988387/" class="face" style="background-image: url('../faces_large2/9/face13809.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2780/4314988387_1706d380e6.jpg','0.587259937445')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/80048637@N02/10368121416/" class="face" style="background-image: url('../faces_large2/6/face24006.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3742/10368121416_bc8843baa4.jpg','0.581526509298')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51030901@N06/6387850955/" class="face" style="background-image: url('../faces_large2/1/face7701.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6108/6387850955_0f80cdd8a0.jpg','0.511006114136')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/nigella lawson.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Nigella_Lawson">Nigella Lawson</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

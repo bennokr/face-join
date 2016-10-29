@@ -1,0 +1,82 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/38898229@N07/13845617475/" class="face" style="background-image: url('../faces_large2/10/face7885.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3824/13845617475_f17a88937d.jpg','0.876936908516')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59654469@N06/10829748503/" class="face" style="background-image: url('../faces_large2/7/face17307.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2866/10829748503_2963f57976.jpg','0.867486988389')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67183342@N08/13741304864/" class="face" style="background-image: url('../faces_large2/23/face11748.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3707/13741304864_d5e1868706.jpg','0.839746975694')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14539333@N05/7186512623/" class="face" style="background-image: url('../faces_large2/24/face22974.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7089/7186512623_738da1ed0f.jpg','0.700564986237')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/80590502@N07/7415705998/" class="face" style="background-image: url('../faces_large2/11/face4986.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7140/7415705998_c79a28e74e.jpg','0.654191247365')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65716827@N00/494573691/" class="face" style="background-image: url('../faces_large2/12/face4112.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/186/494573691_6f1e5c7211.jpg','0.611897797142')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/97644214@N00/4826306512/" class="face" style="background-image: url('../faces_large2/8/face25883.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4079/4826306512_90daf1552d.jpg','0.577301187043')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79520914@N07/8308493940/" class="face" style="background-image: url('../faces_large2/20/face16670.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8078/8308493940_e4c51b53b5.jpg','0.569159929126')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22007612@N05/9340235159/" class="face" style="background-image: url('../faces_large2/12/face24012.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7382/9340235159_be20a62ab6.jpg','0.537127020209')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/jennifer morrison.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Jennifer_Morrison">Jennifer Morrison</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 11.1111111111%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

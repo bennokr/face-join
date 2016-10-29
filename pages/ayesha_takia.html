@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/28004289@N03/8065565288/" class="face" style="background-image: url('../faces_large2/16/face13541.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8181/8065565288_d9ff53f5c9.jpg','1.65193254535')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71606984@N00/11936937034/" class="face" style="background-image: url('../faces_large2/20/face6070.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2873/11936937034_b6ca499899.jpg','0.612445767701')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28038746@N03/9157929284/" class="face" style="background-image: url('../faces_large2/10/face21185.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7377/9157929284_43f4b408ec.jpg','0.5874409346')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68120983@N04/7721658934/" class="face" style="background-image: url('../faces_large2/3/face18903.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7124/7721658934_0d94d59b9e.jpg','0.522827441477')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/76529721@N00/3815678669/" class="face" style="background-image: url('../faces_large2/11/face27336.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2642/3815678669_5f56070f79.jpg','0.522510552316')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/61724560@N00/830621393/" class="face" style="background-image: url('../faces_large2/19/face25744.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1053/830621393_41ca63a0ab.jpg','0.516675641268')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ayesha takia.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ayesha_Takia">Ayesha Takia</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

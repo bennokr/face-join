@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/66478195@N00/5685620015/" class="face" style="background-image: url('../faces_large2/2/face20202.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5246/5685620015_23f31d32e8.jpg','0.913101007004')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/10991381@N00/308424863/" class="face" style="background-image: url('../faces_large2/21/face26496.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/99/308424863_395257fea6.jpg','0.786595042428')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39167181@N06/3599057716/" class="face" style="background-image: url('../faces_large2/0/face24700.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3598/3599057716_6511ae4955.jpg','0.568014543508')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59024622@N00/13531034063/" class="face" style="background-image: url('../faces_large2/1/face14626.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2847/13531034063_bb0e68ac01.jpg','0.563833653638')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/61493316@N00/361265149/" class="face" style="background-image: url('../faces_large2/15/face15365.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/140/361265149_7794cfe32d.jpg','0.509598006183')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/98227537@N00/4562687775/" class="face" style="background-image: url('../faces_large2/19/face5944.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3234/4562687775_f328a72c03.jpg','0.508748914986')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ann margret.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ann_Margret">Ann Margret</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

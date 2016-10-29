@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/34132370@N00/4183293585/" class="face" style="background-image: url('../faces_large2/21/face19321.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2619/4183293585_2f19298885.jpg','1.42534157864')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/54657853@N08/8008899139/" class="face" style="background-image: url('../faces_large2/23/face21223.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8181/8008899139_0bd6e05be2.jpg','1.24513729005')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/86702122@N00/4597728960/" class="face" style="background-image: url('../faces_large2/12/face10062.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4030/4597728960_575c043875.jpg','1.10893144198')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/72556610@N00/9104451312/" class="face" style="background-image: url('../faces_large2/15/face8015.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3718/9104451312_b536b3f712.jpg','0.634198396797')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37706524@N00/3327949081/" class="face" style="background-image: url('../faces_large2/7/face18857.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3542/3327949081_c4df2bca61.jpg','0.618738358612')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28004289@N03/9672767440/" class="face" style="background-image: url('../faces_large2/11/face7086.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2846/9672767440_d2a2e6231b.jpg','0.577411454861')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/gaspard ulliel.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Gaspard_Ulliel">Gaspard Ulliel</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/50218404@N00/210802669/" class="face" style="background-image: url('../faces_large2/2/face22202.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/66/210802669_d6249082c8.jpg','0.985044033915')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/61493316@N00/361265149/" class="face" style="background-image: url('../faces_large2/15/face15365.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/140/361265149_7794cfe32d.jpg','0.859435145424')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39561962@N06/5017869847/" class="face" style="background-image: url('../faces_large2/13/face25488.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4083/5017869847_4c425ba00a.jpg','0.745022065169')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/38040232@N03/8179589518/" class="face" style="background-image: url('../faces_large2/2/face8952.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8204/8179589518_8be0cbf287.jpg','0.577687304777')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79520914@N07/8308493940/" class="face" style="background-image: url('../faces_large2/20/face16670.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8078/8308493940_e4c51b53b5.jpg','0.540530776439')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/58053205@N06/9284307168/" class="face" style="background-image: url('../faces_large2/17/face17067.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5455/9284307168_b0d20304bb.jpg','0.512619115677')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/rumer willis.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Rumer_Willis">Rumer Willis</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

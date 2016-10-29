@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/56674957@N02/5260339984/" class="face" style="background-image: url('../faces_large2/24/face5449.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5001/5260339984_fa5b1783ec.jpg','1.72597743143')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26546496@N04/13785180775/" class="face" style="background-image: url('../faces_large2/8/face4658.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7423/13785180775_25c0157533.jpg','1.50474543858')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/96862948@N00/3645545044/" class="face" style="background-image: url('../faces_large2/10/face4235.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3636/3645545044_c2e1feb609.jpg','1.28676375028')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/108170663@N02/11435651116/" class="face" style="background-image: url('../faces_large2/16/face12016.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3668/11435651116_6a2cc2237f.jpg','1.09389347983')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/106963474@N02/11524331744/" class="face" style="background-image: url('../faces_large2/2/face3077.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5474/11524331744_ea940422b6.jpg','0.911279926178')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11409154@N03/9317653625/" class="face" style="background-image: url('../faces_large2/4/face7004.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3759/9317653625_366aff3dcf.jpg','0.718787250897')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/isabelle adjani.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Isabelle_Adjani">Isabelle Adjani</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,78 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/26306323@N02/8291777210/" class="face" style="background-image: url('../faces_large2/21/face7946.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8495/8291777210_ced1be1917.jpg','0.782984286171')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59732266@N00/2258645593/" class="face" style="background-image: url('../faces_large2/14/face2489.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2047/2258645593_95412e083d.jpg','0.732906123414')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14582051@N05/6797935257/" class="face" style="background-image: url('../faces_large2/7/face10532.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7031/6797935257_9e861f6d2a.jpg','0.71799270169')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/27865228@N06/5520828046/" class="face" style="background-image: url('../faces_large2/0/face23850.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5293/5520828046_33df951ee0.jpg','0.60712613899')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/32224289@N08/5146216272/" class="face" style="background-image: url('../faces_large2/22/face25197.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4058/5146216272_f5e0d0697a.jpg','0.545134995687')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/73488908@N00/3391759952/" class="face" style="background-image: url('../faces_large2/19/face16869.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3584/3391759952_27d96fa2cb.jpg','0.513705071713')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51035553780@N01/5419567787/" class="face" style="background-image: url('../faces_large2/16/face14141.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5094/5419567787_2ef26189da.jpg','0.502583212968')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/natalie cole.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Natalie_Cole">Natalie Cole</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 14.2857142857%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

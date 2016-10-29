@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/95157838@N00/7977131019/" class="face" style="background-image: url('../faces_large2/3/face16778.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8306/7977131019_ac3acd0c75.jpg','1.35223242062')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/87504239@N08/11605969775/" class="face" style="background-image: url('../faces_large2/1/face21351.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7346/11605969775_9cc4a4201e.jpg','1.17275840511')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29954226@N00/253930631/" class="face" style="background-image: url('../faces_large2/16/face4691.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/116/253930631_41d77eaa5e.jpg','0.773170014016')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/96531204@N05/10826099595/" class="face" style="background-image: url('../faces_large2/21/face13946.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5484/10826099595_5022933d3f.jpg','0.603907683814')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/76994867@N00/147264770/" class="face" style="background-image: url('../faces_large2/3/face9453.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/51/147264770_cd59755a09.jpg','0.536640646777')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22564837@N03/4728455595/" class="face" style="background-image: url('../faces_large2/16/face10241.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1405/4728455595_13ce83d267.jpg','0.516152413713')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/yamila diaz.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Yamila_Diaz">Yamila Diaz</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

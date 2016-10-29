@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/37936896@N02/3491268754/" class="face" style="background-image: url('../faces_large2/8/face11983.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3564/3491268754_d4283c1983.jpg','0.907068714162')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/28985262@N04/8202720263/" class="face" style="background-image: url('../faces_large2/12/face987.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8209/8202720263_843cd45cf0.jpg','0.874820389302')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/48581676@N03/5496578814/" class="face" style="background-image: url('../faces_large2/22/face3847.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5051/5496578814_7cd2bae193.jpg','0.718913087266')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25383706@N00/13780406164/" class="face" style="background-image: url('../faces_large2/21/face971.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2938/13780406164_70a42b227c.jpg','0.704417632575')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/77458217@N02/8284162246/" class="face" style="background-image: url('../faces_large2/23/face98.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8364/8284162246_9fef797783.jpg','0.662249533002')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/max mosley.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Max_Mosley">Max Mosley</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

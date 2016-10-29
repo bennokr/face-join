@@ -1,0 +1,80 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/86232553@N00/5905536975/" class="face" style="background-image: url('../faces_large2/6/face12981.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6001/5905536975_0785b2644c.jpg','1.13104370203')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/19665894@N00/5013557596/" class="face" style="background-image: url('../faces_large2/11/face10161.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4154/5013557596_f94d366286.jpg','1.00858010824')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8117923@N08/5519946243/" class="face" style="background-image: url('../faces_large2/8/face14283.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5060/5519946243_8da8bd84a1.jpg','0.814459632887')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/95301652@N00/6615358559/" class="face" style="background-image: url('../faces_large2/3/face10878.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7020/6615358559_8db365fcc4.jpg','0.791823088349')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/91188896@N03/8283054838/" class="face" style="background-image: url('../faces_large2/16/face7166.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8223/8283054838_59ccd99d01.jpg','0.785028627069')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/19701161@N00/5777670917/" class="face" style="background-image: url('../faces_large2/20/face13120.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2363/5777670917_d5cd502f7c.jpg','0.655679211187')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37700634@N03/8587592716/" class="face" style="background-image: url('../faces_large2/8/face22033.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8086/8587592716_f6570c335e.jpg','0.654900144109')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/45037890@N08/6652821205/" class="face" style="background-image: url('../faces_large2/17/face12067.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7015/6652821205_393c598d11.jpg','0.589163039699')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/seth rogen.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Seth_Rogen">Seth Rogen</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 12.5%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/45783535@N05/4273647225/" class="face" style="background-image: url('../faces_large2/19/face24144.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4031/4273647225_1620bc1c30.jpg','1.31398580647')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/54953222@N08/5894574316/" class="face" style="background-image: url('../faces_large2/10/face2660.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5273/5894574316_30acd6a7fe.jpg','1.23201810488')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71606984@N00/3843225488/" class="face" style="background-image: url('../faces_large2/3/face1403.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2559/3843225488_a7a44de000.jpg','0.707916209399')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23724940@N05/12950574093/" class="face" style="background-image: url('../faces_large2/0/face3800.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7366/12950574093_27a232dc69.jpg','0.576888819376')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/62579574@N03/8868333864/" class="face" style="background-image: url('../faces_large2/0/face17425.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8545/8868333864_628d6619ea.jpg','0.534776376391')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68778322@N00/3130877109/" class="face" style="background-image: url('../faces_large2/17/face7142.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3101/3130877109_8fcee52a5f.jpg','0.531318182604')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/minnie driver.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Minnie_Driver">Minnie Driver</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

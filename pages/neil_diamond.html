@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/40744245@N02/8579510551/" class="face" style="background-image: url('../faces_large2/8/face5783.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8520/8579510551_347774c448.jpg','0.871084369728')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71606984@N00/7919216260/" class="face" style="background-image: url('../faces_large2/16/face2991.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8042/7919216260_8292d00a94.jpg','0.744738290773')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/13746609@N03/5963092060/" class="face" style="background-image: url('../faces_large2/15/face12490.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6135/5963092060_138ef10f5f.jpg','0.729688396519')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/92335052@N00/7886414380/" class="face" style="background-image: url('../faces_large2/0/face14900.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8457/7886414380_e86a47ba86.jpg','0.659006856832')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71565762@N04/7643164652/" class="face" style="background-image: url('../faces_large2/17/face6567.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8009/7643164652_951ebbfd22.jpg','0.618875120883')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/30118979@N03/4752819334/" class="face" style="background-image: url('../faces_large2/1/face12526.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4077/4752819334_d8040ab8ef.jpg','0.589661585604')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/neil diamond.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Neil_Diamond">Neil Diamond</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

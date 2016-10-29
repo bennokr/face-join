@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/24638663@N05/2688168313/" class="face" style="background-image: url('../faces_large2/3/face14203.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3006/2688168313_d4c3ae19e8.jpg','0.785261820401')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/43270436@N04/8461934373/" class="face" style="background-image: url('../faces_large2/17/face6692.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8226/8461934373_752775971d.jpg','0.665105872716')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/15306720@N00/5705067825/" class="face" style="background-image: url('../faces_large2/20/face670.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3283/5705067825_165c7a562a.jpg','0.659618999052')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/tea leoni.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Tea_Leoni">Tea Leoni</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

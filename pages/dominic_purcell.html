@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/33285716@N00/558162643/" class="face" style="background-image: url('../faces_large2/14/face2664.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1322/558162643_7aee811dd1.jpg','1.48468720763')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50129408@N06/12157315535/" class="face" style="background-image: url('../faces_large2/15/face20090.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3687/12157315535_55521b40a7.jpg','0.702797942897')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/64333557@N06/9586139342/" class="face" style="background-image: url('../faces_large2/0/face24975.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3744/9586139342_70165a7a1b.jpg','0.686159811619')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53593572@N00/2558936699/" class="face" style="background-image: url('../faces_large2/20/face19170.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3057/2558936699_b4101802e4.jpg','0.631325483124')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/45349448@N00/196623969/" class="face" style="background-image: url('../faces_large2/23/face2798.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/62/196623969_603305ebac.jpg','0.615084018173')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37265148@N04/7443993330/" class="face" style="background-image: url('../faces_large2/5/face4380.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7253/7443993330_5c6eb4e08d.jpg','0.530313418049')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/dominic purcell.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Dominic_Purcell">Dominic Purcell</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

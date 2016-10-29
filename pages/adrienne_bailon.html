@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/67669726@N00/8635710241/" class="face" style="background-image: url('../faces_large2/8/face13708.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8245/8635710241_0bf7067ff2.jpg','0.934466727444')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/74954228@N00/6007618738/" class="face" style="background-image: url('../faces_large2/24/face6999.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6016/6007618738_481c1b7a98.jpg','0.866824685158')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/76751233@N06/7182332310/" class="face" style="background-image: url('../faces_large2/19/face8569.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7228/7182332310_982df4bf73.jpg','0.5529959521')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/adrienne bailon.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Adrienne_Bailon">Adrienne Bailon</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

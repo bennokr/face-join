@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/9800496@N07/5406075105/" class="face" style="background-image: url('../faces_large2/4/face27554.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5219/5406075105_8f791332d8.jpg','1.42616839847')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/12601809@N06/4775738587/" class="face" style="background-image: url('../faces_large2/3/face20853.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4081/4775738587_d65104ec39.jpg','0.765926612867')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/42763001@N05/9466619775/" class="face" style="background-image: url('../faces_large2/9/face12309.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3708/9466619775_31b6146135.jpg','0.724256566783')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21272155@N00/2412697337/" class="face" style="background-image: url('../faces_large2/20/face19695.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2273/2412697337_11bdbfdace.jpg','0.697490505568')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50135425@N06/6367885953/" class="face" style="background-image: url('../faces_large2/17/face9017.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6045/6367885953_52b2ba8972.jpg','0.625719151849')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/36311757@N05/3762233137/" class="face" style="background-image: url('../faces_large2/10/face19785.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2596/3762233137_7eb20924e8.jpg','0.605393601957')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/rachel nichols.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Rachel_Nichols">Rachel Nichols</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

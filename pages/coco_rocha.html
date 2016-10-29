@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/37487618@N06/8907568359/" class="face" style="background-image: url('../faces_large2/12/face20912.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5328/8907568359_7eabccfac0.jpg','0.894538704965')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/87884693@N00/9275200091/" class="face" style="background-image: url('../faces_large2/17/face1267.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7460/9275200091_2e48ac1c98.jpg','0.876378676353')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21717278@N00/4603019337/" class="face" style="background-image: url('../faces_large2/18/face13793.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1415/4603019337_ae09787d70.jpg','0.800974528935')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/106963474@N02/11524331744/" class="face" style="background-image: url('../faces_large2/2/face3077.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5474/11524331744_ea940422b6.jpg','0.657087457174')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/75694462@N07/7010100331/" class="face" style="background-image: url('../faces_large2/17/face9067.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7095/7010100331_04a008da87.jpg','0.572048800871')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71107559@N03/9356564465/" class="face" style="background-image: url('../faces_large2/20/face16995.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5460/9356564465_b023358199.jpg','0.509921391666')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/coco rocha.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Coco_Rocha">Coco Rocha</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

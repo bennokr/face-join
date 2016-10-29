@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/40955163@N00/4010908461/" class="face" style="background-image: url('../faces_large2/7/face10707.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3652/4010908461_53198f3bd4.jpg','1.95391224011')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/31597761@N00/339976247/" class="face" style="background-image: url('../faces_large2/8/face14733.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/126/339976247_48650e8c14.jpg','1.08784076949')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/57768217@N00/2849510203/" class="face" style="background-image: url('../faces_large2/1/face26976.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3182/2849510203_652804089e.jpg','0.735971464836')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/90903613@N00/447268295/" class="face" style="background-image: url('../faces_large2/10/face5560.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/168/447268295_ee66941dd9.jpg','0.692991678249')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/45037890@N08/8196563132/" class="face" style="background-image: url('../faces_large2/8/face13158.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8488/8196563132_c834a5779a.jpg','0.688715782565')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/gary oldman.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Gary_Oldman">Gary Oldman</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

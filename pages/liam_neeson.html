@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/40814689@N00/439927939/" class="face" style="background-image: url('../faces_large2/6/face22331.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/200/439927939_36d749bade.jpg','1.370789781')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/39164371@N03/5363390860/" class="face" style="background-image: url('../faces_large2/7/face26432.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5088/5363390860_988222a664.jpg','1.146885264')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/45349448@N00/196623969/" class="face" style="background-image: url('../faces_large2/23/face2798.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/62/196623969_603305ebac.jpg','0.944115939035')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/48600106280@N01/503048414/" class="face" style="background-image: url('../faces_large2/0/face17200.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/218/503048414_90b040493c.jpg','0.627651201919')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65955880@N00/3921787515/" class="face" style="background-image: url('../faces_large2/2/face25802.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3524/3921787515_9a1d762c32.jpg','0.59153547734')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/liam neeson.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Liam_Neeson">Liam Neeson</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

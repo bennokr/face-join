@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/71042921@N06/7844023352/" class="face" style="background-image: url('../faces_large2/19/face4194.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8437/7844023352_33d43f2e6b.jpg','0.841327969651')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/99374309@N00/242471503/" class="face" style="background-image: url('../faces_large2/12/face16762.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/91/242471503_41bd151055.jpg','0.772357278896')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53646146@N02/13786528914/" class="face" style="background-image: url('../faces_large2/16/face316.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3794/13786528914_bcea2ffbfd.jpg','0.519400362272')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/romy schneider.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Romy_Schneider">Romy Schneider</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

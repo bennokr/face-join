@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/34361763@N03/12460645255/" class="face" style="background-image: url('../faces_large2/5/face11605.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5530/12460645255_dfedd58911.jpg','1.12155246908')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/111106674@N02/11350993713/" class="face" style="background-image: url('../faces_large2/4/face25254.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5498/11350993713_c7540f2020.jpg','1.11269425192')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25894421@N05/4069758002/" class="face" style="background-image: url('../faces_large2/24/face18024.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2566/4069758002_5bcb3a9834.jpg','0.749102889754')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/sam cooke.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Sam_Cooke">Sam Cooke</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

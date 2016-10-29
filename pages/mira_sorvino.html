@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/25409126@N07/3488938811/" class="face" style="background-image: url('../faces_large2/1/face11026.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3565/3488938811_4ba21c842e.jpg','1.04085503716')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/53004883@N02/6868521229/" class="face" style="background-image: url('../faces_large2/10/face5235.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7061/6868521229_279de71e6b.jpg','1.03523776353')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21691445@N00/13942151735/" class="face" style="background-image: url('../faces_large2/14/face20389.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7383/13942151735_b9acb9a436.jpg','0.690919474901')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22527776@N07/3020460836/" class="face" style="background-image: url('../faces_large2/9/face21859.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3063/3020460836_e1f2b76cf1.jpg','0.645757903281')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/22806307@N00/2258576516/" class="face" style="background-image: url('../faces_large2/24/face5699.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2260/2258576516_c7833b6959.jpg','0.542799143288')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/mira sorvino.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Mira_Sorvino">Mira Sorvino</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

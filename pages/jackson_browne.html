@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/25032336@N03/3436930803/" class="face" style="background-image: url('../faces_large2/6/face5631.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3613/3436930803_9f944d1ff2.jpg','1.08561430343')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7174350@N05/10248510444/" class="face" style="background-image: url('../faces_large2/12/face26387.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8408/10248510444_6a71c62a99.jpg','0.987292023814')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/33312196@N00/146218562/" class="face" style="background-image: url('../faces_large2/21/face6046.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/53/146218562_f3bcb6f912.jpg','0.787951367984')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/51115320@N00/5943784786/" class="face" style="background-image: url('../faces_large2/16/face22866.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6028/5943784786_bddfe933b0.jpg','0.740640074214')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11039569@N03/5945271252/" class="face" style="background-image: url('../faces_large2/7/face17132.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6021/5945271252_fece8b898d.jpg','0.724281687869')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/9962140@N02/6550568551/" class="face" style="background-image: url('../faces_large2/13/face19288.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7028/6550568551_34301ae073.jpg','0.655430986761')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/jackson browne.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Jackson_Browne">Jackson Browne</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/89382625@N07/8251734854/" class="face" style="background-image: url('../faces_large2/19/face23019.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8481/8251734854_1e1d081b2a.jpg','1.65668612898')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/69181674@N08/6876402499/" class="face" style="background-image: url('../faces_large2/15/face2265.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7192/6876402499_0ab9dcdb2c.jpg','0.678022951191')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/36311757@N05/3762233137/" class="face" style="background-image: url('../faces_large2/10/face19785.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2596/3762233137_7eb20924e8.jpg','0.616823905341')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/40879704@N02/8278166583/" class="face" style="background-image: url('../faces_large2/16/face25916.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8497/8278166583_629664e7c5.jpg','0.61658069859')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/40348568@N07/8686955527/" class="face" style="background-image: url('../faces_large2/11/face11561.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8541/8686955527_8e706c197e.jpg','0.606111539438')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37205687@N07/4722717200/" class="face" style="background-image: url('../faces_large2/18/face68.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1250/4722717200_c2a561ff7e.jpg','0.516275144826')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/abigail breslin.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Abigail_Breslin">Abigail Breslin</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

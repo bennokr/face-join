@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/70724137@N05/8572215903/" class="face" style="background-image: url('../faces_large2/16/face1341.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8245/8572215903_9683053bd8.jpg','1.43504803931')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7278633@N04/6012992590/" class="face" style="background-image: url('../faces_large2/4/face19504.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6004/6012992590_be847c8480.jpg','1.23506456637')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/55628713@N03/5154821110/" class="face" style="background-image: url('../faces_large2/0/face21400.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4003/5154821110_9f2503dff8.jpg','1.06896847747')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/67579917@N02/10698860153/" class="face" style="background-image: url('../faces_large2/20/face25220.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3709/10698860153_ee0bb641d8.jpg','0.651009374483')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/32619231@N02/13563645944/" class="face" style="background-image: url('../faces_large2/3/face2578.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7125/13563645944_aeafaf5d7b.jpg','0.610091388464')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/18088426@N00/89285461/" class="face" style="background-image: url('../faces_large2/9/face21809.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/24/89285461_0292c515a3.jpg','0.537138474859')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/daniel day.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Daniel_Day">Daniel Day</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

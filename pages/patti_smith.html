@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/8001265@N08/2272286430/" class="face" style="background-image: url('../faces_large2/23/face19798.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2210/2272286430_a746ac957a.jpg','0.953338681955')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/98260994@N08/9495392116/" class="face" style="background-image: url('../faces_large2/23/face20073.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5529/9495392116_1a1b600e59.jpg','0.671323375999')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/89331336@N00/2170347314/" class="face" style="background-image: url('../faces_large2/24/face4224.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2290/2170347314_6d2b8d29a8.jpg','0.525302195191')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/patti smith.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Patti_Smith">Patti Smith</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

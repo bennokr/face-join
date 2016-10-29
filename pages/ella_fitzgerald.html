@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/53283407@N04/7027257593/" class="face" style="background-image: url('../faces_large2/0/face19450.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7087/7027257593_2717a734a9.jpg','1.30591602078')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/85131712@N00/3384239998/" class="face" style="background-image: url('../faces_large2/11/face21861.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3537/3384239998_3ba7d0c16d.jpg','1.13163297158')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/30324125@N00/7784654546/" class="face" style="background-image: url('../faces_large2/24/face1524.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8300/7784654546_90b95a90bf.jpg','0.987360118845')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/26131196@N00/3071787159/" class="face" style="background-image: url('../faces_large2/12/face11587.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3145/3071787159_0383a5acae.jpg','0.907576694634')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71606984@N00/7852826650/" class="face" style="background-image: url('../faces_large2/12/face23937.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8437/7852826650_91df5c2e3e.jpg','0.827418010131')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/79593520@N00/491931458/" class="face" style="background-image: url('../faces_large2/0/face20625.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/232/491931458_71a8802638.jpg','0.644035742235')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ella fitzgerald.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ella_Fitzgerald">Ella Fitzgerald</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

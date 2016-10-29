@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/74814994@N00/4131424938/" class="face" style="background-image: url('../faces_large2/18/face768.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2669/4131424938_390951ea85.jpg','0.908719570287')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/57185608@N00/3942893803/" class="face" style="background-image: url('../faces_large2/22/face26622.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2421/3942893803_4eedcce7c2.jpg','0.893311288553')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/58145222@N00/5879026386/" class="face" style="background-image: url('../faces_large2/16/face21416.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6035/5879026386_fedfc7ff10.jpg','0.744969787328')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/76479797@N08/12474174235/" class="face" style="background-image: url('../faces_large2/5/face12805.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3688/12474174235_8b607a0aa7.jpg','0.694837736947')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/27423327@N08/5487731479/" class="face" style="background-image: url('../faces_large2/0/face16100.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5298/5487731479_ca02628862.jpg','0.564344614078')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/96395704@N00/2527121341/" class="face" style="background-image: url('../faces_large2/5/face3030.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3274/2527121341_d708537571.jpg','0.518823036402')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ashley scott.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ashley_Scott">Ashley Scott</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

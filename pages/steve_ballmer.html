@@ -1,0 +1,74 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/65193799@N00/164539077/" class="face" style="background-image: url('../faces_large2/5/face5555.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/61/164539077_355959b19d.jpg','1.09782251527')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65966179@N00/7531308698/" class="face" style="background-image: url('../faces_large2/19/face20594.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8165/7531308698_cc570904bd.jpg','0.941919933946')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/84147801@N00/2880816530/" class="face" style="background-image: url('../faces_large2/5/face17580.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3278/2880816530_f44b2ac2d5.jpg','0.920579014142')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/10457645@N02/5524707102/" class="face" style="background-image: url('../faces_large2/21/face7046.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5058/5524707102_020d54858f.jpg','0.847758935372')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11839821@N00/4836425375/" class="face" style="background-image: url('../faces_large2/3/face928.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4089/4836425375_8b48384393.jpg','0.823846758854')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/steve ballmer.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Steve_Ballmer">Steve Ballmer</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 20.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

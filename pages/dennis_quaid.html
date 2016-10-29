@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/50486337@N08/6833469598/" class="face" style="background-image: url('../faces_large2/14/face25764.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7208/6833469598_32d2beb455.jpg','0.746653360929')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/7945418@N03/4342072334/" class="face" style="background-image: url('../faces_large2/14/face13939.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4067/4342072334_0fd39b34f0.jpg','0.732256065697')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46907600@N02/6170297583/" class="face" style="background-image: url('../faces_large2/3/face5053.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6174/6170297583_85e5bebaa5.jpg','0.592168209231')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/dennis quaid.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Dennis_Quaid">Dennis Quaid</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/59468914@N00/2112749566/" class="face" style="background-image: url('../faces_large2/14/face2239.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2414/2112749566_97551755cb.jpg','1.51158813344')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/12261156@N00/5252344527/" class="face" style="background-image: url('../faces_large2/14/face26389.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5010/5252344527_fb0c495a27.jpg','1.34991155795')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/18088426@N00/89285461/" class="face" style="background-image: url('../faces_large2/9/face21809.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/24/89285461_0292c515a3.jpg','1.21565601653')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/98658849@N08/9241622068/" class="face" style="background-image: url('../faces_large2/5/face12480.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3746/9241622068_e8ff59fa89.jpg','0.935032899181')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11076656@N04/3685545406/" class="face" style="background-image: url('../faces_large2/21/face17921.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2531/3685545406_5579686162.jpg','0.927623515401')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/49612039@N03/4767922041/" class="face" style="background-image: url('../faces_large2/19/face11019.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4100/4767922041_67aa8fae94.jpg','0.531844175546')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/ayrton senna.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Ayrton_Senna">Ayrton Senna</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/14095261@N02/2611142079/" class="face" style="background-image: url('../faces_large2/21/face23096.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3144/2611142079_a28630aaa3.jpg','1.12381978983')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23889619@N04/4120161721/" class="face" style="background-image: url('../faces_large2/14/face4189.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2525/4120161721_3b5f7f441e.jpg','0.988242193852')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25815025@N02/3346751697/" class="face" style="background-image: url('../faces_large2/20/face27495.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3561/3346751697_a2329993ae.jpg','0.781380065926')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23792686@N08/3002773606/" class="face" style="background-image: url('../faces_large2/20/face1170.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3212/3002773606_8e9339df88.jpg','0.743807902614')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37593403@N03/9320327189/" class="face" style="background-image: url('../faces_large2/8/face17933.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7312/9320327189_5fbc7820d7.jpg','0.63076703383')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/21856707@N00/954301437/" class="face" style="background-image: url('../faces_large2/13/face25963.jpg');" onMouseOver="show_bigimg('http://farm2.staticflickr.com/1275/954301437_045e482c51.jpg','0.504815711463')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/kofi annan.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Kofi_Annan">Kofi Annan</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

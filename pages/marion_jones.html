@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/36856587@N00/8369518906/" class="face" style="background-image: url('../faces_large2/10/face15610.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8371/8369518906_90f21e1fea.jpg','0.907624832942')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/33193598@N07/3471744446/" class="face" style="background-image: url('../faces_large2/4/face13004.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3378/3471744446_b1aaf68866.jpg','0.751264354483')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/97653867@N07/13383756983/" class="face" style="background-image: url('../faces_large2/20/face19520.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7244/13383756983_a5bf0fd8bb.jpg','0.684622280267')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/11037418@N00/43507375/" class="face" style="background-image: url('../faces_large2/20/face4670.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/33/43507375_2e16804158.jpg','0.678190488668')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/23392825@N03/11151804734/" class="face" style="background-image: url('../faces_large2/24/face5999.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5544/11151804734_a30a4d7c83.jpg','0.616466438201')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/37996616805@N01/11388104485/" class="face" style="background-image: url('../faces_large2/10/face16585.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3820/11388104485_9d149e63aa.jpg','0.514441808591')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/marion jones.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Marion_Jones">Marion Jones</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

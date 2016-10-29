@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/10991381@N00/308424863/" class="face" style="background-image: url('../faces_large2/22/face26497.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/99/308424863_395257fea6.jpg','1.66826764204')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/65243150@N00/67570752/" class="face" style="background-image: url('../faces_large2/24/face9399.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/25/67570752_5a381fb86a.jpg','0.905155840002')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/8043899@N02/1977347700/" class="face" style="background-image: url('../faces_large2/10/face10035.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2404/1977347700_7680d14203.jpg','0.520344289198')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/doris day.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Doris_Day">Doris Day</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

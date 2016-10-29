@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/88703109@N03/8092680198/" class="face" style="background-image: url('../faces_large2/2/face23652.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8054/8092680198_5fcac29296.jpg','1.71495009314')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/66485831@N02/6074139780/" class="face" style="background-image: url('../faces_large2/10/face20335.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6084/6074139780_6764f776c4.jpg','1.19489762633')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/33784327@N05/7344673184/" class="face" style="background-image: url('../faces_large2/4/face9954.jpg');" onMouseOver="show_bigimg('http://farm9.staticflickr.com/8153/7344673184_4761f61a45.jpg','0.579115297419')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/florence nightingale.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Florence_Nightingale">Florence Nightingale</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 33.3333333333%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

@@ -1,0 +1,84 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/21383568@N00/388107026/" class="face" style="background-image: url('../faces_large2/0/face21975.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/183/388107026_53dc9fecc4.jpg','1.36258384868')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59874422@N00/252600420/" class="face" style="background-image: url('../faces_large2/14/face2339.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/102/252600420_e9f5ea4131.jpg','1.30313724339')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/68728055@N04/10464609506/" class="face" style="background-image: url('../faces_large2/2/face652.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5495/10464609506_a18dcfcf4e.jpg','1.24312517411')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/29789073@N00/4141531571/" class="face" style="background-image: url('../faces_large2/8/face8308.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2606/4141531571_e8090ccda1.jpg','1.13502040972')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/34906368@N04/7309314358/" class="face" style="background-image: url('../faces_large2/8/face11158.jpg');" onMouseOver="show_bigimg('http://farm8.staticflickr.com/7218/7309314358_0ca777315f.jpg','0.891510954156')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/50301706@N07/4902130123/" class="face" style="background-image: url('../faces_large2/22/face10897.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4118/4902130123_459582c03c.jpg','0.843523096604')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/35768689@N08/5627237018/" class="face" style="background-image: url('../faces_large2/8/face19958.jpg');" onMouseOver="show_bigimg('http://farm6.staticflickr.com/5263/5627237018_3304f2e78b.jpg','0.74896724448')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/59983818@N06/9658217471/" class="face" style="background-image: url('../faces_large2/21/face18871.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2814/9658217471_5e242ed754.jpg','0.603234581214')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/98227537@N00/4562687775/" class="face" style="background-image: url('../faces_large2/19/face5944.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3234/4562687775_f328a72c03.jpg','0.591160831284')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/66347513@N02/6053618995/" class="face" style="background-image: url('../faces_large2/13/face3513.jpg');" onMouseOver="show_bigimg('http://farm7.staticflickr.com/6089/6053618995_b5dd846272.jpg','0.564106372655')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/patricia arquette.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Patricia_Arquette">Patricia Arquette</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 10.0%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>

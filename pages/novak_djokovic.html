@@ -1,0 +1,76 @@
+
+<script type="text/javascript">
+function show_bigimg(url, score) {
+    document.getElementById('bigimg').src = url;
+    console.log(score);
+    document.getElementById('score').innerText = score;
+}
+</script>
+<ul class="leftbar">
+
+        <li><a href="http://flickr.com/photos/7911584@N03/467645812/" class="face" style="background-image: url('../faces_large2/5/face12580.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/216/467645812_598b3689fe.jpg','1.26813607703')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/14293046@N00/4751540172/" class="face" style="background-image: url('../faces_large2/18/face16593.jpg');" onMouseOver="show_bigimg('http://farm5.staticflickr.com/4136/4751540172_fefd5eeeb7.jpg','1.11575238111')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/25977280@N00/219325584/" class="face" style="background-image: url('../faces_large2/16/face24116.jpg');" onMouseOver="show_bigimg('http://farm1.staticflickr.com/79/219325584_d8fd8284f1.jpg','1.07299270334')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/122530852@N02/13769952064/" class="face" style="background-image: url('../faces_large2/1/face3376.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2809/13769952064_c222674cf1.jpg','0.677582313199')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/46124963@N03/10724775423/" class="face" style="background-image: url('../faces_large2/10/face10560.jpg');" onMouseOver="show_bigimg('http://farm3.staticflickr.com/2835/10724775423_c5fa402a2f.jpg','0.543348326678')"></a></li>
+        
+        <li><a href="http://flickr.com/photos/71606984@N00/2689538248/" class="face" style="background-image: url('../faces_large2/12/face4387.jpg');" onMouseOver="show_bigimg('http://farm4.staticflickr.com/3225/2689538248_b6eff8de5f.jpg','0.523280534097')"></a></li>
+        
+
+</ul>
+
+<div>
+    <div id="title">
+        <img src="../celeb-gifs/novak djokovic.gif">
+        <h1><a href="https://en.wikipedia.org/wiki/Novak_Djokovic">Novak Djokovic</a></h1>
+    </div>
+    <div class="note">
+        <p>On the left is a ranked list of up to 100 photos that match this celebrity.</p>
+        <p>The best matches are at the top, the worst are at the bottom.</p>
+        <p>The score is the output of the <a href="https://en.wikipedia.org/wiki/One-class_classification#PU_learning">PU</a>-trained model.</p>
+    </div>
+    
+    <p>Score:<span id="score"></span></p>
+    <img src="#" id="bigimg">
+</div>
+
+
+
+<style>
+body {font-family: sans-serif}
+#title {
+    background:#eee;
+    line-height:96px;
+}
+#title img {
+    float:left;
+    padding-right: 2em;
+}
+.note {
+    background:#eee;
+    padding: 2em;
+    float:right;
+    width: 20%;
+}
+ul.leftbar {list-style-type: none; clear:both; margin: 0px; padding: 0px; }
+.leftbar li,.leftbar a {margin: 0px; padding: 0px; text-decoration:none;font-size:0px;}
+.leftbar {
+ height: 100%;
+ float:left;
+ width: 100px;
+}
+.face {
+    display: inline-block;
+    height: 16.6666666667%;
+    width:96px;
+    background-position: center;
+    background-size: cover;
+}
+.face:hover {
+    height: 96px;
+}
+</style>
